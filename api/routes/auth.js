@@ -12,9 +12,9 @@ router.post('/register',async(req,res) => {
     
     // create a new user
     const newUser = new User({
-      username:req.body.username,
-      email:req.body.email,
-      password:hashedPassword,
+      username:req.body.username.trim(),
+      email:req.body.email.trim(),
+      password:hashedPassword.trim(),
     })
     
     // save user 
@@ -24,14 +24,13 @@ router.post('/register',async(req,res) => {
   }catch(err){
     res.status(500).json(err)
   }
-
-   
-   
 })
 
 //Login
 router.post('/login',async(req,res)=> {
-  try{
+  
+  if(req.body.email && req.body.password){
+    try{
   
       const user = await User.findOne({email:req.body.email})
       !user && res.status(404).send('user not found')
@@ -39,11 +38,15 @@ router.post('/login',async(req,res)=> {
       const validPassword = await bcrypt.compare(req.body.password, user.password)
       !validPassword && res.status(404).json('user not found')
   
-     
-  res.status(200).json(user)  
-  }catch(err){
-    res.status(500).json(err)
+    res.status(200).json(user)  
+    }catch(err){
+      res.status(500).json(err)
+    }
+  }else{
+    res.status(404).json('E-mail and password is necessary to Login, try again! ')
   }
+  
+   
 })
  
 module.exports = router;  
