@@ -51,7 +51,7 @@ router.delete("/:id", async (req, res) => {
     }
   } else {
     return res.status(403).json("You can delete only your account");
-  }
+  } 
 });
 
 //get a user
@@ -114,7 +114,7 @@ router.put("/:id/follow", async (req, res) => {
       res.status(500).json(error);
     }
   } else {
-    res.status(500).json("You cant follow yourself");
+    res.status(403).json("You cant follow yourself");
   }
 });
 
