@@ -1,14 +1,14 @@
 import "./leftbar.css";
 import {
-  Bookmark,
-  Chat,
+  ChatBubbleOutline,
   Event,
-  GroupSharp,
   HelpOutline,
+  PeopleAltOutlined,
   RssFeed,
-  Work,
+  TurnedInNot,
+  WorkOutline,
 } from "@material-ui/icons";
-
+ 
 export const Leftbar = () => {
   return (
     <div className="leftbar">
@@ -19,19 +19,19 @@ export const Leftbar = () => {
             <span className="leftbarListItemText">Feed</span>
           </li>
           <li className="leftbarListItem">
-            <Chat className="leftbarIcon" />
+            <ChatBubbleOutline className="leftbarIcon" />
             <span className="leftbarListItemText">Chat</span>
           </li>
           <li className="leftbarListItem">
-            <GroupSharp className="leftbarIcon" />
+            <PeopleAltOutlined className="leftbarIcon" />
             <span className="leftbarListItemText">Groups</span>
           </li>
           <li className="leftbarListItem">
-            <Bookmark className="leftbarIcon" />
+            <TurnedInNot className="leftbarIcon" />
             <span className="leftbarListItemText">Bookmark</span>
           </li>
           <li className="leftbarListItem">
-            <Work className="leftbarIcon" />
+            <WorkOutline className="leftbarIcon" />
             <span className="leftbarListItemText">Job</span>
           </li>
           <li className="leftbarListItem">
