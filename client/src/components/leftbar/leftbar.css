@@ -1,0 +1,10 @@
+.leftbar{
+  flex:3;
+  height: calc(100vh - 50px);
+ 
+}
+
+.leftbarWrapper{
+  padding: 20px;
+  background-color:chartreuse
+}
