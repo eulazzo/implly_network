@@ -8,7 +8,9 @@ import {
   TurnedInNot,
   WorkOutline,
 } from "@material-ui/icons";
- 
+import { CloseFriends } from "../closeFriend/CloseFriends";
+import { Users } from "../../dummyData";
+
 export const Leftbar = () => {
   return (
     <div className="leftbar">
@@ -46,54 +48,9 @@ export const Leftbar = () => {
         <button className="leftbarBtn">Show more</button>
         <hr className="leftbarHr" />
         <ul className="leftbarFriendList">
-          <li className="leftbarFriend">
-            <img
-              className="leftbarProfilePicture"
-              src="https://thispersondoesnotexist.com/image"
-              alt="Friend Profile img"
-            />
-            <span className="leftbarFriendName">Jane Doe</span>
-          </li>
-          <li className="leftbarFriend">
-            <img
-              className="leftbarProfilePicture"
-              src="https://thispersondoesnotexist.com/image"
-              alt="Friend Profile img"
-            />
-            <span className="leftbarFriendName">Jane Doe</span>
-          </li>
-          <li className="leftbarFriend">
-            <img
-              className="leftbarProfilePicture"
-              src="https://thispersondoesnotexist.com/image"
-              alt="Friend Profile img"
-            />
-            <span className="leftbarFriendName">Jane Doe</span>
-          </li>
-          <li className="leftbarFriend">
-            <img
-              className="leftbarProfilePicture"
-              src="https://thispersondoesnotexist.com/image"
-              alt="Friend Profile img"
-            />
-            <span className="leftbarFriendName">Jane Doe</span>
-          </li>
-          <li className="leftbarFriend">
-            <img
-              className="leftbarProfilePicture"
-              src="https://thispersondoesnotexist.com/image"
-              alt="Friend Profile img"
-            />
-            <span className="leftbarFriendName">Jane Doe</span>
-          </li>
-          <li className="leftbarFriend">
-            <img
-              className="leftbarProfilePicture"
-              src="https://thispersondoesnotexist.com/image"
-              alt="Friend Profile img"
-            />
-            <span className="leftbarFriendName">Jane Doe</span>
-          </li>
+          {Users.map(user=> (
+            <CloseFriends key={user.id} user={user} />
+          ))}
         </ul>
       </div>
     </div>

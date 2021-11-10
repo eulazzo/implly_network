@@ -1,6 +1,10 @@
 import React from "react";
 import "./rightbar.css";
+import { Users } from '../../dummyData'
+import { Online } from "../online/Online";
+
 export const Rightbar = () => {
+
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
@@ -17,61 +21,11 @@ export const Rightbar = () => {
         <img className="rightbarAD" src="assets/ad.png" alt="" />
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img
-                className="rightbarProfileImg"
-                src="https://thispersondoesnotexist.com/image"
-                alt="profile friend"
-              />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Jane Doe</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img
-                className="rightbarProfileImg"
-                src="https://thispersondoesnotexist.com/image"
-                alt="profile friend"
-              />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Jane Doe</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img
-                className="rightbarProfileImg"
-                src="https://thispersondoesnotexist.com/image"
-                alt="profile friend"
-              />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Jane Doe</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img
-                className="rightbarProfileImg"
-                src="https://thispersondoesnotexist.com/image"
-                alt="profile friend"
-              />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Jane Doe</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img
-                className="rightbarProfileImg"
-                src="https://thispersondoesnotexist.com/image"
-                alt="profile friend"
-              />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Jane Doe</span>
-          </li>
+           {
+             Users.map(user=>(
+               <Online key={user.id} user={user}/>
+             ))
+           }
         </ul>
       </div>
     </div>
