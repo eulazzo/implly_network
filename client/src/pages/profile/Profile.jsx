@@ -12,11 +12,11 @@ export const Profile = () => {
   const [user, setUser] = useState({});
   const {username} = useParams()
  
-
   useEffect(() => {
     const getUser = async () => {
       const response = await axios.get(`/users?username=${username}`);
       setUser(response.data);
+      console.log(`/users?username=${username}`)
     };
     getUser();
   }, []);

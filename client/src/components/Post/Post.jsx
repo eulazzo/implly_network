@@ -56,14 +56,14 @@ export const Post = ({ post }) => {
           <div className="postBottomLeft">
             <img
               className="likeIcon"
-              src="assets/like.png"
+              src="/assets/like.png"
               onClick={likeHandler}
               alt=""
             />
             <img
               className="likeIcon"
               onClick={likeHandler}
-              src="assets/heart.png"
+              src="/assets/heart.png"
               alt=""
             />
             <span className="postLikeCounter">{like} likes</span>
