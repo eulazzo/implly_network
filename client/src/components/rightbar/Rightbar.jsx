@@ -4,6 +4,7 @@ import { Users } from "../../dummyData";
 import { Online } from "../online/Online";
 
 export const Rightbar = ({ profile }) => {
+
   const HomeRightbar = () => {
     return (
       <>
@@ -104,7 +105,7 @@ export const Rightbar = ({ profile }) => {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        <ProfileRightbar />
+       {profile ?  <ProfileRightbar /> : <HomeRightbar/>}
       </div>
     </div>
   );
