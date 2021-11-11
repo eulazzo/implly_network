@@ -55,8 +55,9 @@ router.delete("/:id", async (req, res) => {
 });
 
 //get a user
-router.get("/", async (req, res) => {
-  const userId = req.query.userId;
+router.get("/:id", async (req, res) => {
+  // const userId = req.query.userId;
+  const userId = req.params.id
   const username = req.query.username;
   try {
     const user = userId
