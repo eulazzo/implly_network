@@ -1,16 +1,19 @@
 import React from "react";
 import "./header.css";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="topbarLogo">Sigma</span>
+        <Link to='/' style={{textDecoration:"none"}}>
+          <span className="topbarLogo">Sigma</span>
+        </Link>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
-          <Search className='searchIcon'/>
+          <Search className="searchIcon" />
           <input
             className="searchInput"
             placeholder="Search for friends or post"

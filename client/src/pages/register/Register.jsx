@@ -21,10 +21,8 @@ export const Register = () => {
               className="loginInput"
             />
             <button className="loginButton">Sign Up</button>
-            <hr className='loginHr'/>
-            <button className="loginRegisterButton">
-              Log into Account
-            </button>
+            <hr className="loginHr" />
+            <button className="loginRegisterButton">Log into Account</button>
           </div>
         </div>
       </div>
