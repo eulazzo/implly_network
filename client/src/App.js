@@ -10,7 +10,6 @@ import {
   Switch,
   Route,
   Redirect,
-  Routes,
 } from "react-router-dom";
 
 const App = () => {
