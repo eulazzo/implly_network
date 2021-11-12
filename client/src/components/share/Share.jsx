@@ -1,5 +1,11 @@
 import "./share.css";
-import { Label, PermMedia, Room, EmojiEmotions } from "@material-ui/icons";
+import {
+  Label,
+  PermMedia,
+  Room,
+  EmojiEmotions,
+  Cancel,
+} from "@material-ui/icons";
 import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
@@ -18,7 +24,6 @@ export const Share = () => {
       img: null,
     };
 
-    console.log(newPost);
     if (file) {
       const data = new FormData();
       const fileName = Date.now() + file.name;
@@ -70,12 +75,25 @@ export const Share = () => {
           />
         </div>
         <hr className="shareHr" />
-        <div className="shareBottom">
-          <form
-            onSubmit={submitPost}
-            className="shareOptions"
-            encType="multipart/form-data"
-          >
+
+        {file && (
+          <div className="seeTheimageOnShare">
+            <img
+              className="shareImg"
+              src={URL.createObjectURL(file)}
+              alt=""
+              srcSet=""
+            />
+            <Cancel className="shareCancelImg" onClick={() => setFile(null)} />
+          </div>
+        )}
+
+        <form
+          className="shareBottom"
+          onSubmit={submitPost} 
+          encType="multipart/form-data"
+        >
+          <div className="shareOptions">
             <label htmlFor="file" className="shareOption">
               <PermMedia htmlColor="Tomato" className="shareIcon" />
               <span className="shareOptionText">Photo or Video</span>
@@ -100,11 +118,11 @@ export const Share = () => {
               <EmojiEmotions htmlColor="goldenrod" className="shareIcon" />
               <span className="shareOptionText">Feelings</span>
             </div>
-            <button className="shareButton" type="submit">
-              Share
-            </button>
-          </form>
-        </div>
+          </div>
+          <button className="shareButton" type="submit">
+            Share
+          </button>
+        </form>
       </div>
     </div>
   );
