@@ -1,8 +1,13 @@
 import "./header.css";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
 export const Header = () => {
+  const { user } = useContext(AuthContext);
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   const logouthandler = () => {
     localStorage.clear();
     window.location.reload();
@@ -44,12 +49,17 @@ export const Header = () => {
             <span className="topbarIconBadge">10</span>
           </div>
 
-          <img
-            onClick={logouthandler}
-            className="topbarImg"
-            src="https://thispersondoesnotexist.com/image"
-            alt="profile"
-          />
+          <Link to={`profile/${user.username}`} >
+            <img
+              className="topbarImg"
+              src={
+                user.profilePicture
+                  ? PF + user.profilePicture
+                  : `${PF}/person/noAvatar.png`
+              }
+              alt="profile"
+            />
+          </Link>
         </div>
       </div>
     </div>
