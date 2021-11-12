@@ -19,7 +19,7 @@ export const Profile = () => {
       console.log(`/users?username=${username}`)
     };
     getUser();
-  }, []);
+  }, [username]);
 
 
   return (

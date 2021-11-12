@@ -15,13 +15,32 @@ export const Share = () => {
     const newPost = {
       userId: user._id,
       desc: postDescription.current.value,
+      img: null,
     };
 
-    try {
-      await axios.post("/posts", newPost);
-      window.location.reload();
-    } catch (error) {
-      console.log(error);
+    console.log(newPost);
+    if (file) {
+      const data = new FormData();
+      const fileName = Date.now() + file.name;
+      data.append("name", fileName);
+      data.append("file", file);
+      newPost.img = fileName;
+
+      try {
+        //post the image itself
+        await axios.post("/upload", data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    if (file || postDescription.current.value) {
+      try {
+        await axios.post("/posts", newPost);
+        window.location.reload();
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
@@ -30,8 +49,6 @@ export const Share = () => {
     const selectedFile = event.target.files[0];
     if (allowedTypes.includes(selectedFile.type)) setFile(selectedFile);
   };
-
-  console.log(file);
 
   return (
     <div className="share">
@@ -55,8 +72,8 @@ export const Share = () => {
         <hr className="shareHr" />
         <div className="shareBottom">
           <form
-            className="shareOptions"
             onSubmit={submitPost}
+            className="shareOptions"
             encType="multipart/form-data"
           >
             <label htmlFor="file" className="shareOption">
@@ -83,10 +100,10 @@ export const Share = () => {
               <EmojiEmotions htmlColor="goldenrod" className="shareIcon" />
               <span className="shareOptionText">Feelings</span>
             </div>
+            <button className="shareButton" type="submit">
+              Share
+            </button>
           </form>
-          <button className="shareButton" type="submit">
-            Share
-          </button>
         </div>
       </div>
     </div>
