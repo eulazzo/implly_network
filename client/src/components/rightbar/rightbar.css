@@ -46,10 +46,7 @@
 
 
 
-.rightbarTitle{
-  margin-bottom: 20px;
-}
-
+ 
 .rightbarFriendList{
   padding: 0;
   margin: 0;
@@ -103,4 +100,7 @@
   object-fit: cover;
   border-radius: 5px;
  
+}
+.rightbarTitle{
+  margin-bottom: 20px;
 }

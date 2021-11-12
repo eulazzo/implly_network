@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+ 
 }
 
 .rightbarProfileImgContainer{
   margin-right: 10px; 
   position: relative;
+  
 }
 
 .rightbarProfileImg{
