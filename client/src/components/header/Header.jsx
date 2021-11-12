@@ -1,13 +1,17 @@
-import React from "react";
 import "./header.css";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
+  const logouthandler = () => {
+    localStorage.clear();
+    window.location.reload();
+  };
+
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <Link to='/' style={{textDecoration:"none"}}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <span className="topbarLogo">Sigma</span>
         </Link>
       </div>
@@ -41,6 +45,7 @@ export const Header = () => {
           </div>
 
           <img
+            onClick={logouthandler}
             className="topbarImg"
             src="https://thispersondoesnotexist.com/image"
             alt="profile"
