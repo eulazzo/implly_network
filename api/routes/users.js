@@ -71,7 +71,8 @@ router.get("/", async (req, res) => {
 
 //In schema we define followings as array and inside
 //has every friends id that follow us.
-//get friend
+
+//get friend 
 router.get("/friends/:userId", async (req, res) => {
   try {
     const user = await User.findById(req.params.userId);
