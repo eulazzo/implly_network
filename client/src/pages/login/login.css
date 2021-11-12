@@ -41,6 +41,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+ 
 }
 
 .loginInput{
@@ -53,6 +54,7 @@
 }
 .loginButton{
   height: 50px;
+  outline: none;
   border-radius: 10px;
   border:none;
   background-color: #1775ee;
@@ -64,6 +66,10 @@
 .loginButton:hover{
   background-color: #0f6ce7;
 }
+
+.loginButton:disabled{
+  cursor: not-allowed;
+}
 .loginForgot{
   text-align: center;
   color:#1775ee;
@@ -72,6 +78,7 @@
 
 .loginRegisterButton{
   height: 50px;
+  outline: none;
   border-radius: 10px;
   border:none;
   background-color: #42b72a;
