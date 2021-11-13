@@ -121,7 +121,7 @@ export const Rightbar = ({ user }) => {
                   }
                   alt=""
                 />
-                <span className="rightbarFollowingName">{friend.username}</span>
+                <span style={{textAlign:"center"}} className="rightbarFollowingName">{friend.username}</span>
               </div>
             </Link>
           ))}
