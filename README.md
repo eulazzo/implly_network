@@ -18,7 +18,7 @@ inspired by facebook app<br>
 
 ![SIGMA CHAT GIF](github/ChatMessage.gif)
 
-<h2>Posting</h2>
+<h2>Making a post</h2>
 
 ![SIGMA CHAT GIF](github/Posting.gif)
 
