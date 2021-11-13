@@ -8,7 +8,7 @@
 
 <p>Application with the purpose of connecting people all over the world <br>
 inspired by facebook app<br>
-<p>Developed with Node.js & ReactJS </p> 
+<p>Developed with ReactJS, NodeJs and Socket.io </p> 
 
  
 
