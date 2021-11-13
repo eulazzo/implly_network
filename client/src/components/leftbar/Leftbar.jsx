@@ -10,6 +10,7 @@ import {
 } from "@material-ui/icons";
 import { CloseFriends } from "../closeFriend/CloseFriends";
 import { Users } from "../../dummyData";
+import { Link } from "react-router-dom";
 
 export const Leftbar = () => {
   return (
@@ -20,10 +21,15 @@ export const Leftbar = () => {
             <RssFeed className="leftbarIcon" />
             <span className="leftbarListItemText">Feed</span>
           </li>
-          <li className="leftbarListItem">
-            <ChatBubbleOutline className="leftbarIcon" />
-            <span className="leftbarListItemText">Chat</span>
-          </li>
+          <Link
+            to="/messenger"
+            style={{ textDecoration: "none", color: "#000" }}
+          >
+            <li className="leftbarListItem">
+              <ChatBubbleOutline className="leftbarIcon" />
+              <span className="leftbarListItemText">Chat</span>
+            </li>
+          </Link>
           <li className="leftbarListItem">
             <PeopleAltOutlined className="leftbarIcon" />
             <span className="leftbarListItemText">Groups</span>
@@ -48,7 +54,7 @@ export const Leftbar = () => {
         <button className="leftbarBtn">Show more</button>
         <hr className="leftbarHr" />
         <ul className="leftbarFriendList">
-          {Users.map(user=> (
+          {Users.map((user) => (
             <CloseFriends key={user.id} user={user} />
           ))}
         </ul>
