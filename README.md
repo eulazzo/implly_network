@@ -14,7 +14,7 @@ inspired by facebook app<br>
 
 ## :camera: See it:
 
-<h2>Chating</h2>
+<h2>Chatting</h2>
 
 ![SIGMA CHAT GIF](github/ChatMessage.gif)
 
