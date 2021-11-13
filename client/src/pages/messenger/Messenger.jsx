@@ -6,14 +6,27 @@ import { ChatOnline } from "../../components/chatOnline/ChatOnline";
 import { useContext, useEffect, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
+import { io } from "socket.io-client";
 
 export const Messenger = () => {
   const [conversations, setConversations] = useState([]);
   const [currentChat, setCurrentChat] = useState(null);
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
+  const socket = useRef();
   const { user } = useContext(AuthContext);
   const scrollRef = useRef();
+
+  useEffect(() => {
+    return socket.current= io("ws://localhost:8900");
+  }, []);
+
+  useEffect(() => {
+    socket.current.emit("addUser", user._id);
+    socket.current.on("getUsers", (users) => {
+      console.log(users);
+    });
+  }, [user]);
 
   useEffect(() => {
     const getConversations = async () => {
@@ -27,9 +40,9 @@ export const Messenger = () => {
     getConversations();
   }, [user?._id]);
 
-  useEffect(()=>{
-    scrollRef.current?.scrollIntoView( {behavior:"smooth"} )  
-  },[messages])
+  useEffect(() => {
+    scrollRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
 
   useEffect(() => {
     const getMessages = async () => {
@@ -88,12 +101,8 @@ export const Messenger = () => {
               <>
                 <div className="chatBoxTop">
                   {messages.map((msg) => (
-                    <div ref={scrollRef}>
-                      <Message
-                        key={msg._id}
-                        message={msg}
-                        own={msg.senderId === user._id}
-                      />
+                    <div ref={scrollRef} key={msg._id}>
+                      <Message message={msg} own={msg.senderId === user._id} />
                     </div>
                   ))}
                 </div>
