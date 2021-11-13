@@ -59,6 +59,11 @@
   color: white;
 }
 
+.chatSubmitButton:hover{
+  background-color: rgb(3, 109, 109);
+  transition-duration: 0.4s;
+}
+
 .chatOnline {
   flex: 3;
 }
