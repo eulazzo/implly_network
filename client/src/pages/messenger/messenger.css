@@ -19,6 +19,21 @@
   flex: 5.5;
 }
 
+
+.noConversationTxt{
+  position: absolute;
+  top:25%;
+  color:#aaa6a6;
+  cursor: default;  
+  font-size: 25px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 .chatBoxWrapper {
   display: flex;
   flex-direction: column;

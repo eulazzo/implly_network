@@ -6,6 +6,7 @@ export const Conversation = ({ conversation, currentUser }) => {
   const [user, setUser] = useState(null);
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
+
   useEffect(() => {
     const friendsId = conversation.members.find(
       (member) => member !== currentUser._id
@@ -20,6 +21,9 @@ export const Conversation = ({ conversation, currentUser }) => {
     };
     getUser();
   }, [currentUser, conversation]);
+
+  
+
   return (
     <div className="conversation">
       <img

@@ -3,6 +3,7 @@ import "./online.css";
 export const Online = ({ user }) => {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
+   
   return (
     <li className="rightbarFriend">
       <div className="rightbarProfileImgContainer">
