@@ -3,8 +3,26 @@ import { Header } from "../../components/header/Header";
 import { Conversation } from "../../components/conversations/Conversation";
 import { Message } from "../../components/Message/Message";
 import { ChatOnline } from "../../components/chatOnline/ChatOnline";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../context/AuthContext";
+import axios from "axios";
 
 export const Messenger = () => {
+  const [conversations, setConversations] = useState([]);
+  const { user } = useContext(AuthContext);
+
+  useEffect(() => {
+    const getConversations = async () => {
+      try {
+        const response = await axios.get(`/conversations/${user._id}`);
+        setConversations(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getConversations();
+  }, [user?._id]);
+
   return (
     <>
       <Header />
@@ -16,11 +34,13 @@ export const Messenger = () => {
               type="text"
               placeholder="Search for friends"
             />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
+            {conversations.map((conversation) => (
+              <Conversation
+                key={conversation._id}
+                currentUser={user}
+                conversation={conversation}
+              />
+            ))}
           </div>
         </div>
         <div className="chatBox">
