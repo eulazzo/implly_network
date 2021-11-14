@@ -1,5 +1,5 @@
 <h1 align="center">
-   <img alt="sigma" src="github/logo.svg" width="200px" />
+   <img alt="sigma" src="github/sigmaLogo.svg" width="200px" />
 </h1>
 
  ![SIGMA CHAT GIF](github/registerAndLoginSystem.gif)
@@ -8,7 +8,7 @@
 
 <p>Application with the purpose of connecting people all over the world <br>
 inspired by facebook app<br>
-<p>Developed with ReactJS, NodeJs and Socket.io </p> 
+<p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  and <code>Socket.io</code> </p> 
 
  
 
