@@ -12,7 +12,7 @@ inspired by facebook app<br>
 
  
 
-## :camera: See it:
+## :camera: See the app's features::
 
 <h2>Chatting</h2>
 
