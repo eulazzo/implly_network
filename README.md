@@ -10,7 +10,13 @@
 inspired by facebook app<br>
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  and <code>Socket.io</code> </p> 
 
+ # To-do lists
  
+<ol>
+ <li>Make the SM Responsive </li>
+ <li>Add comment functionality </li>
+ <li>Add delete and edit posts functionality</li>
+</ol>
 
 ## :camera: See the app's features:
 
