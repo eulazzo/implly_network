@@ -20,11 +20,11 @@ inspired by facebook app<br>
 
 ## :camera: See the app's features:
 
-<h2>Chatting</h2>
+<h2>Realtime Chat With Socket.io </h2>
 
 ![SIGMA CHAT GIF](github/ChatMessage.gif)
 
-<h2>Making a post</h2>
+<h2>Post </h2>
 
 ![SIGMA CHAT GIF](github/Posting.gif)
 
