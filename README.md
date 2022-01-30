@@ -2,7 +2,7 @@
    <img alt="sigma" src="github/sigmaLogo.svg" width="200px" />
 </h1>
 
- ![SIGMA CHAT GIF](github/registerAndLoginSystem.gif)
+ ![SIGMA CHAT GIF](github/header.gif)
 
 # Sigma
 
