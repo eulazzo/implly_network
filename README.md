@@ -8,9 +8,25 @@
 
 <p>Application with the purpose of connecting people all over the world <br>
 inspired by facebook app<br>
-<p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  and <code>Socket.io</code> </p> 
+<p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
- # To-do lists
+# About the project
+<p>
+ 
+   So far it has the following features: `Register`, `login`, `post images` and  give a `like`. In the home, the posts of the logged in user and the people he follows are fetched.  
+   In addition, it is possible to `follow users` and chat in real time through socket.io and finally, users who are online are shown.  
+   For realtime chat with socket, basically we have a socket server when some user connects to the application they will be connected </br>with the socket server and they will have their own socketID. There is no DB on the server, it is not saving any data or reading from any DB, just connecting with the computer and using only events. Connecting with PC means, in short, that the socket server uses TCP/IP connection. Let's suppose that a user “A” wants to send an event to user B, so user A will send a message event to the server, he takes it this event and checks: “ok..this is a message event” and it came from socketIDA, for example, and the receiver is B. That way, instantly the message will be set on socketA. So sender will be A and text will have the message sent.
+
+</p>
+</br>
+
+## Upload image
+<p>
+  I used multer for this purpose, that's not a good idea, I know. I plan to later switch to Firebase or Amazon Services
+</p>
+
+
+# To-do lists
  
 <ol>
  <li>Make the SM Responsive </li>
@@ -22,7 +38,7 @@ inspired by facebook app<br>
 
 <h2>Realtime Chat With Socket.io </h2>
 
-![SIGMA CHAT GIF](github/ChatMessage.gif)
+![SIGMA CHAT GIF](github/chatWith.gif)
 
 <h2>Post </h2>
 
