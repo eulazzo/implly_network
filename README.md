@@ -1,5 +1,5 @@
 <h1 align="center">
-   <img alt="sigma" src="github/logo.svg" width="200px" />
+   <img alt="sigma" src="github/sigmaLogo.svg" width="200px" />
 </h1>
 
  ![SIGMA CHAT GIF](github/registerAndLoginSystem.gif)
@@ -8,17 +8,23 @@
 
 <p>Application with the purpose of connecting people all over the world <br>
 inspired by facebook app<br>
-<p>Developed with ReactJS, NodeJs and Socket.io </p> 
+<p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  and <code>Socket.io</code> </p> 
 
+ # To-do lists
  
+<ol>
+ <li>Make the SM Responsive </li>
+ <li>Add comment functionality </li>
+ <li>Add delete and edit posts functionality</li>
+</ol>
 
 ## :camera: See the app's features:
 
-<h2>Chatting</h2>
+<h2>Realtime Chat With Socket.io </h2>
 
 ![SIGMA CHAT GIF](github/ChatMessage.gif)
 
-<h2>Making a post</h2>
+<h2>Post </h2>
 
 ![SIGMA CHAT GIF](github/Posting.gif)
 
