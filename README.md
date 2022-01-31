@@ -1,6 +1,29 @@
+
 <h1 align="center">
    <img alt="sigma" src="github/sigmaLogo.svg" width="200px" />
 </h1>
+  
+<div align="center">
+  <h1>Application with the purpose of connecting people all over the world</h1>
+</div>
+
+<p align="center" >
+  <a href="#-sobre-a-aplica%C3%A7%C3%A3o"> Sobre </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-conteúdos-aplicados"> Conteúdos aplicados</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-suporte"> Suporte </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licen%C3%A7a">Licença</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/eulazzo" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=author&message=eulazzo&color=1877f2&labelColor=008000" alt="Github"> 
+  </a>
+    <img src="https://img.shields.io/github/stars/eulazzo/Sigma?color=1877f2&labelColor=008000" alt="Stars">
+  <img src="https://img.shields.io/github/last-commit/eulazzo/Sigma?color=1877f2&labelColor=008000" alt="Commits">
+  <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=1877f2&labelColor=008000" alt="License">
+</p>
+
 
  ![SIGMA CHAT GIF](github/header.gif)
 
