@@ -4,7 +4,7 @@
 </h1>
   
 <div align="center">
-  <h1>Application with the purpose of connecting people all over the world</h1>
+  <h1>Sigma - Is about connection </h1>
 </div>
 
 <p align="center" >
