@@ -36,7 +36,7 @@ inspired by facebook app<br>
 # About the project
 <p>
  
-   So far it has the following features: `Register`, `login`, `post images` and  give a `like`. In the home, `the posts of the logged in user and the people he follows are fetched`.  
+   So far it has the following features: `Register`, `login`, `post images` and `like` a post. In the home, `the posts of the logged in user and the people he follows are fetched`.  
    In addition, it is possible to `follow users` and `chat in real time` through `socket.io` and finally, `users who are online are shown`.  
 </p>
 
