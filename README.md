@@ -30,7 +30,7 @@
 # Sigma
 
 <p>Application with the purpose of connecting people all over the world <br>
-inspired by facebook app<br>
+inspired by Facebook App<br>
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
 # About the project
