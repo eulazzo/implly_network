@@ -41,11 +41,18 @@ inspired by facebook app<br>
 </p>
 
 ## Realtime chat
-<p>
- First of all, what's Socket.Io ? </br>
-    Socket.io is a technology that allows you to start bi-directional cummunication session between the browser and the server. Thanks to this protocol it is possibility to send request to the server and receive an answer as events, what means that you don't have to re-send the request to the server. 
- For this realtime chat application with socket, we have a socket server when some user connects to the application they will be connected </br> with the socket server and they will have their own socketID. There is no DB on the server, it is not saving any data or reading from any DB, just connecting with the computer and using only events. Connecting with PC means, in short, that the socket server uses TCP/IP connection. Let's suppose that a user “A” wants to send an event to user B, so user A will send a message event to the server, he takes it this event and checks: “ok..this is a message event” and it came from socketIDA, for example, and the receiver is B. That way, instantly the message will be set on socketA. So sender will be A and text will have the message sent.
+ 
+ ### First of all, what's Socket.Io ? </br>
+ <p>
+    Socket.io is a technology that allows you to start bi-directional communication session between the browser and the server. Thanks to this protocol it is possibility to send request to the server and receive an answer as events, what means that you don't have to re-send the request to the server. </br>
+    
+   In bellow there is an image for basic presentation. So...For this realtime chat application with socket,basically we have a socket server whenever any user connects to the application  it's gonna connect this socket server and they will have their own socketID, and inside the server there is no DB, it's not writing any data, not reading from any db it's just connecting to your computer and using only events. By saying connecting your computer,in short way, means that the socket server use TCP/IP connection. </br>  
+  
+ Let's say the user 4, on the image, wants to send an event to user 3, so user 4 is going to send the sendMmessage event to the server, he takes it(server) this event and say: “ok..this is a sendMessage event” and it came from socketID4, for example, and the receiver is 3. That way, instantly the message will be set on socket 3. So sender will be 4 and text will have the message sent.
 </p>
+
+![SIGMA CHAT GIF](github/socket.png)
+
 
 </br>
 
