@@ -1,7 +1,8 @@
 .topbarContainer{
   height: 50px;
   width: 100%;
-  background-color: #1877f2;
+  /* background-color: #1877f2; */
+  background-color: #4718AD;
   display: flex;
   align-items: center;
   position: sticky;
@@ -65,7 +66,8 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  background: rgb(255, 0, 0);
+  /* background: rgb(255, 0, 0); */
+  background-color: #615B00;
   border-radius: 50%;
   top:-5px;
   right:-5px;
