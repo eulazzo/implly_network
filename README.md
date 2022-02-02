@@ -34,11 +34,16 @@ inspired by facebook app<br>
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
 # About the project
-<p>
- 
-   So far it has the following features: `Register`, `login`, `post images` and `like` a post. In the home, `the posts of the logged in user and the people he follows are fetched`.  
-   In addition, it is possible to `follow users` and `chat in real time` through `socket.io` and finally, `users who are online are shown`.  
-</p>
+
+Functionalities:
+- Register
+- Login
+- Post images
+- Like a post
+- On the home page, `the posts of the logged in user and the people he follows are fetched`
+- In addition, it is possible to `follow users` and `chat in realtime` through `socket.io` 
+- And finally `users who are online are shown`. 
+
 
 ## Realtime chat
  
