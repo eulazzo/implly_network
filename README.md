@@ -72,7 +72,8 @@ Functionalities:
 <ol>
  <li>Make the SM Responsive </li>
  <li>Add comment functionality </li>
- <li>Add delete and edit posts functionality</li>
+ <li>Delete and edit posts functionality</li>
+ <li>Use S3 Storage or Firebase for Upload of images instead of Multer</li>
 </ol>
 
 ## :camera: See the app's features:
