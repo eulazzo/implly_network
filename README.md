@@ -30,22 +30,34 @@
 # Sigma
 
 <p>Application with the purpose of connecting people all over the world <br>
-inspired by facebook app<br>
+inspired by Facebook App<br>
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
 # About the project
-<p>
- 
-   So far it has the following features: `Register`, `login`, `post images` and `like` a post. In the home, `the posts of the logged in user and the people he follows are fetched`.  
-   In addition, it is possible to `follow users` and `chat in real time` through `socket.io` and finally, `users who are online are shown`.  
-</p>
+
+Functionalities:
+- Register
+- Login
+- Post images
+- Like a post
+- On the home page, `the posts of the logged in user and the people he follows are fetched`
+- In addition, it is possible to `follow users` and `chat in realtime` through `socket.io` 
+- And finally `users who are online are shown`. 
+
 
 ## Realtime chat
-<p>
- First of all, what's Socket.Io ? </br>
-    Socket.io is a technology that allows you to start bi-directional cummunication session between the browser and the server. Thanks to this protocol it is possibility to send request to the server and receive an answer as events, what means that you don't have to re-send the request to the server. 
- For this realtime chat application with socket, we have a socket server when some user connects to the application they will be connected </br> with the socket server and they will have their own socketID. There is no DB on the server, it is not saving any data or reading from any DB, just connecting with the computer and using only events. Connecting with PC means, in short, that the socket server uses TCP/IP connection. Let's suppose that a user “A” wants to send an event to user B, so user A will send a message event to the server, he takes it this event and checks: “ok..this is a message event” and it came from socketIDA, for example, and the receiver is B. That way, instantly the message will be set on socketA. So sender will be A and text will have the message sent.
+ 
+ ### First of all, what's Socket.Io ? </br>
+ <p>
+    Socket.io is a technology that allows you to start bi-directional communication session between the browser and the server. Thanks to this protocol it is possibility to send request to the server and receive an answer as events, what means that you don't have to re-send the request to the server. </br>
+    
+   So...For this realtime chat application with socket,basically we have a socket server whenever any user connects to the application  it's gonna connect this socket server and they will have their own socketID, and inside the server there is no DB, it's not writing any data, not reading from any db it's just connecting to your computer and using only events. By saying connecting your computer,in short way, means that the socket server use TCP/IP connection. </br>  
+  
+ Let's say the user 4, `on the image below`, wants to send an event to user 3, so user 4 is going to send the sendMmessage event to the server, he takes it(server) this event and say: “ok..this is a sendMessage event” and it came from socketID4, for example, and the receiver is 3. That way, instantly the message will be set on socket 3. So sender will be 4 and text will have the message sent.
 </p>
+
+![SIGMA CHAT GIF](github/socket.png)
+
 
 </br>
 
@@ -60,7 +72,8 @@ inspired by facebook app<br>
 <ol>
  <li>Make the SM Responsive </li>
  <li>Add comment functionality </li>
- <li>Add delete and edit posts functionality</li>
+ <li>Delete and edit posts functionality</li>
+ <li>Use S3 Storage or Firebase for Upload of images instead of Multer</li>
 </ol>
 
 ## :camera: See the app's features:
