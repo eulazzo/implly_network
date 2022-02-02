@@ -1,6 +1,29 @@
+
 <h1 align="center">
    <img alt="sigma" src="github/sigmaLogo.svg" width="200px" />
 </h1>
+  
+<div align="center">
+  <h1>Sigma - Is about connection </h1>
+</div>
+
+<p align="center" >
+  <a href="#-sobre-a-aplica%C3%A7%C3%A3o"> Sobre </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-conteúdos-aplicados"> Conteúdos aplicados</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-suporte"> Suporte </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licen%C3%A7a">Licença</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/eulazzo" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=author&message=eulazzo&color=1877f2&labelColor=008000" alt="Github"> 
+  </a>
+    <img src="https://img.shields.io/github/stars/eulazzo/Sigma?color=1877f2&labelColor=008000" alt="Stars">
+  <img src="https://img.shields.io/github/last-commit/eulazzo/Sigma?color=1877f2&labelColor=008000" alt="Commits">
+  <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=1877f2&labelColor=008000" alt="License">
+</p>
+
 
  ![SIGMA CHAT GIF](github/header.gif)
 
@@ -8,9 +31,31 @@
 
 <p>Application with the purpose of connecting people all over the world <br>
 inspired by facebook app<br>
-<p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  and <code>Socket.io</code> </p> 
+<p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
- # To-do lists
+# About the project
+<p>
+ 
+   So far it has the following features: `Register`, `login`, `post images` and `like` a post. In the home, `the posts of the logged in user and the people he follows are fetched`.  
+   In addition, it is possible to `follow users` and `chat in real time` through `socket.io` and finally, `users who are online are shown`.  
+</p>
+
+## Realtime chat
+<p>
+ First of all, what's Socket.Io ? </br>
+    Socket.io is a technology that allows you to start bi-directional cummunication session between the browser and the server. Thanks to this protocol it is possibility to send request to the server and receive an answer as events, what means that you don't have to re-send the request to the server. 
+ For this realtime chat application with socket, we have a socket server when some user connects to the application they will be connected </br> with the socket server and they will have their own socketID. There is no DB on the server, it is not saving any data or reading from any DB, just connecting with the computer and using only events. Connecting with PC means, in short, that the socket server uses TCP/IP connection. Let's suppose that a user “A” wants to send an event to user B, so user A will send a message event to the server, he takes it this event and checks: “ok..this is a message event” and it came from socketIDA, for example, and the receiver is B. That way, instantly the message will be set on socketA. So sender will be A and text will have the message sent.
+</p>
+
+</br>
+
+## Upload image
+<p>
+  I used multer for this purpose, that's not a good idea, I know. I plan to later switch to Firebase or Amazon Services
+</p>
+
+
+# To-do lists
  
 <ol>
  <li>Make the SM Responsive </li>
@@ -22,7 +67,7 @@ inspired by facebook app<br>
 
 <h2>Realtime Chat With Socket.io </h2>
 
-![SIGMA CHAT GIF](github/ChatMessage.gif)
+![SIGMA CHAT GIF](github/chatWith.gif)
 
 <h2>Post </h2>
 
