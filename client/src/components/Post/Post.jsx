@@ -1,15 +1,25 @@
 import "./post.css";
-import { MoreVert } from "@material-ui/icons";
+import { FavoriteBorder, MoreVert } from "@material-ui/icons";
+import Bookmark from "@material-ui/icons/BookmarkBorderOutlined";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { format } from "timeago.js";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
+import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
+
+import ShareIcon from "@material-ui/icons/Share";
+import ThumbUpOutlinedIcon from "@material-ui/icons/ThumbUpOutlined";
+import ModalOptions from "../ModalOptions/ModalOptions";
 
 export const Post = ({ post }) => {
   const [like, setLike] = useState(post.likes.length);
-  const [isliked, setIsLiked] = useState(false);
+  const [isLiked, setIsLiked] = useState(false);
   const [user, setUser] = useState({});
+  let [style, setStyle] = useState("");
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  let [likeCounter, setLikeCounter] = useState(post.likes.length);
   const { user: currentUser } = useContext(AuthContext);
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
@@ -26,16 +36,19 @@ export const Post = ({ post }) => {
   }, [post.userId]);
 
   const likeHandler = async () => {
+    setLikeCounter(isLiked ? likeCounter - 1 : likeCounter + 1);
+    setIsLiked(!isLiked);
+
+    if (!isLiked) setStyle("#4718AD");
+    else setStyle("#000");
+
     try {
-      await axios.put(`/posts/${post._id}/like`, {
-        userId: currentUser._id,
-      });
-    } catch (error) {}
-
-    setLike(isliked ? like - 1 : like + 1);
-    setIsLiked(!isliked);
+      await axios.put(`posts/${post._id}/like`, { userId: currentUser._id });
+    } catch (error) {
+      console.log(error);
+    }
   };
-
+  // TODO:change this after
   return (
     <div className="post">
       <div className="postWrapper">
@@ -56,7 +69,10 @@ export const Post = ({ post }) => {
             <span className="postdate">{format(post.createdAt)}</span>
           </div>
           <div className="postTopRight">
-            <MoreVert />
+            <MoreVert
+              className="moreVert"
+              onClick={() => setModalIsOpen(!modalIsOpen)}
+            />
           </div>
         </div>
         <div className="postCenter">
@@ -64,24 +80,54 @@ export const Post = ({ post }) => {
           <img className="postImg" src={PF + post.img} alt="" />
         </div>
         <div className="postBottom">
-          <div className="postBottomLeft">
-            <img
-              className="likeIcon"
-              src="/assets/like.png"
-              onClick={likeHandler}
-              alt=""
-            />
-            <img
-              className="likeIcon"
-              onClick={likeHandler}
-              src="/assets/heart.png"
-              alt=""
-            />
-            <span className="postLikeCounter">{like} likes</span>
-          </div>
-          <div className="postBottomRight">
-            <span className="postCommentText">{post.comment} comments</span>
-          </div>
+          <ul className="userOptionsToReact">
+            <li className="postShowCounter">
+              {isLiked ? (
+                <FavoriteIcon
+                  onClick={likeHandler}
+                  style={{ color: style }}
+                  className="postHeart"
+                />
+              ) : (
+                <ThumbUpOutlinedIcon className="postHeart" />
+              )}
+              <span className="countLikes">{likeCounter}</span>
+            </li>
+            <li className="postShowCounter">
+              <span className="countComment">34</span>
+              <span className="commentTxt">Comments</span>
+            </li>
+            <li className="postShowCounter">
+              <span className="countShares">34</span>
+              <span className="commentTxt">Shares</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* react to a post */}
+        <div className="postUserOptions">
+          <ul className="postOptionsContainer">
+            <li className="postshowOption">
+              <ThumbUpOutlinedIcon
+                // style={{ color: style }}
+                onClick={likeHandler}
+                className="postIcon"
+              />
+              <span onClick={likeHandler}>{isLiked ? "Dislike" : "Like"}</span>
+            </li>
+            <li className="postshowOption">
+              <ChatBubbleOutlineIcon className="postIcon" />
+              <span>Comment</span>
+            </li>
+            <li className="postshowOption">
+              <ShareIcon className="postIcon" />
+              <span>Share</span>
+            </li>
+            <li className="postshowOption ">
+              <Bookmark className="postIcon" />
+              <span className="saveTxt">Save</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

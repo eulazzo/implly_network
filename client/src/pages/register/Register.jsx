@@ -35,9 +35,10 @@ export const Register = () => {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Sigma</h3>
+          <h3 className="loginLogo">Implly</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Sigma
+            Everybody has something <b className="pinned">GOOD</b> to{" "}
+            <b className="pinned">SHARE</b>
           </span>
         </div>
         <form className="loginRight" onSubmit={registerHandler}>

@@ -50,13 +50,15 @@ export const Rightbar = ({ user }) => {
     return (
       <>
         <div className="birthdayContainer">
+       
           <img
             className="birthdayImg"
-            src="assets/gift.png"
+            src="/assets/logoV1.svg"
             alt="friends birthday"
           />
           <span className="birthdayText">
-            <b>Pola Foster</b> and<b> 3 other friends</b> have a birthday today
+            <b className="rightbarFriendShare">Lorena</b> just shared something
+            you might be interested in.
           </span>
         </div>
         <img className="rightbarAD" src="assets/ad.png" alt="" />
@@ -121,7 +123,12 @@ export const Rightbar = ({ user }) => {
                   }
                   alt=""
                 />
-                <span style={{textAlign:"center"}} className="rightbarFollowingName">{friend.username}</span>
+                <span
+                  style={{ textAlign: "center" }}
+                  className="rightbarFollowingName"
+                >
+                  {friend.username}
+                </span>
               </div>
             </Link>
           ))}

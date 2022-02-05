@@ -8,16 +8,12 @@ export const Header = () => {
   const { user } = useContext(AuthContext);
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
-  const logouthandler = () => {
-    localStorage.clear();
-    window.location.reload();
-  };
-
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
+        <img className="logo" src="/assets/logo_v2.svg" alt="logo" />
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="topbarLogo">Sigma</span>
+          <span className="topbarLogo">Implly</span>
         </Link>
       </div>
       <div className="topbarCenter">
@@ -49,7 +45,7 @@ export const Header = () => {
             <span className="topbarIconBadge">10</span>
           </div>
 
-          <Link to={`profile/${user.username}`} >
+          <Link to={`profile/${user.username}`}>
             <img
               className="topbarImg"
               src={

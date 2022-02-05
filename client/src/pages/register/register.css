@@ -20,7 +20,8 @@
 .loginLogo{
   font-size: 50px;
   font-weight:800;
-  color:#1775ee;
+  /* color:#1775ee; */
+  color:#783CFA;
   margin-bottom: 10px;
 }
 
@@ -55,18 +56,21 @@
   height: 50px;
   border-radius: 10px;
   border:none;
-  background-color: #1775ee;
+  /* background-color: #1775ee; */
+  background-color: #783CFA;
   color:#fff;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
 }
 .loginButton:hover{
-  background-color: #0f6ce7;
+  /* background-color: #0f6ce7; */
+  background-color: #4718AD;
 }
 .loginForgot{
   text-align: center;
-  color:#1775ee;
+  /* color:#1775ee; */
+  color:#783CFA;
   cursor: pointer;
 }
 
@@ -74,7 +78,9 @@
   height: 50px;
   border-radius: 10px;
   border:none;
-  background-color: #42b72a;
+  /* background-color: #42b72a; */
+  background-color: #783CFA;
+
   color:#fff;
   font-size: 20px;
   font-weight: 500;
@@ -83,11 +89,16 @@
   margin: 0 auto;
 }
 .loginRegisterButton:hover{
-  background-color: #37ac1f;  
+  /* background-color: #37ac1f;   */
+  background-color: #4718AD;
   transition-duration: 0.3s;
 }
 .loginHr{
   opacity: 0.7;
   color:gray;
 }
-  
+
+.pinned{
+  color: #615B00;
+  font-weight: bold;
+}

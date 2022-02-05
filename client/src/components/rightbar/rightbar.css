@@ -7,9 +7,13 @@
 }
 
 .birthdayImg{
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
+}
+
+.rightbarFriendShare{
+  font-weight: bold;
 }
 
 .birthdayText{
@@ -32,7 +36,7 @@
   margin-top: 30px;
   margin-bottom: 10px;
   border:none;
-  background-color:#1872f5;
+  background-color:#783CFA;
   color:#fff;
   border-radius:5px;
   padding:5px 10px;
@@ -43,7 +47,10 @@
   cursor: pointer;
   outline: none;
 }
-
+.rightbarFollowBtn:hover{
+  background-color:#4718AD;
+  transition:all 0.3s ease-in-out ;
+}
 
 
  

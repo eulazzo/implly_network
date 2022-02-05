@@ -69,14 +69,16 @@
   height: 40px;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
   cursor: pointer;
-  background-color: teal;
+  background-color: #783CFA;
   color: white;
 }
 
 .chatSubmitButton:hover{
-  background-color: rgb(3, 109, 109);
-  transition-duration: 0.4s;
+  background-color:#4718AD;
+  transition:all 0.3s ease-in-out ;
 }
 
 .chatOnline {

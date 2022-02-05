@@ -60,12 +60,17 @@
   border:none;
   padding: 7px 10px;
   border-radius:5px;
-  background-color:rgb(0, 128, 0);
+  /* background-color:rgb(0, 128, 0); */
+  background-color: #783CFA;
   font-weight: 500;
   color:#fff;
   margin-right: 20px;
   cursor: pointer;
+}
 
+.shareButton:hover{
+  background-color:#4718AD;
+  transition:all 0.3s ease-in-out ;
 }
 
 .seeTheimageOnShare{

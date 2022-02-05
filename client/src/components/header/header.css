@@ -12,6 +12,8 @@
 
 .topbarLeft{
   flex:3;
+  display: flex;
+  align-items: center;
 }
 .topbarCenter{
   flex:5;
@@ -79,10 +81,18 @@
 }
 .topbarLogo{
   font-size: 24px;
-  margin-left: 20px;
+  margin-left: 10px;
   font-weight: bold;
   color: #fff;
   cursor:pointer;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  object-fit: fill;
+  margin-left: 25px;
+  cursor: pointer;
 }
 
 .topbarImg{

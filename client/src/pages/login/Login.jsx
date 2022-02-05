@@ -3,6 +3,7 @@ import "./login.css";
 import { loginCall } from "../../apiCalls";
 import { AuthContext } from "../../context/AuthContext";
 import { CircularProgress } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   const email = useRef();
@@ -16,14 +17,15 @@ export const Login = () => {
       dispatch
     );
   };
-  console.log(user);
+
   return (
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Sigma</h3>
+          <h3 className="loginLogo">Implly</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Sigma
+            Everybody has something <b className="pinned">GOOD</b> to{" "}
+            <b className="pinned">SHARE</b>
           </span>
         </div>
         <form className="loginRight" onSubmit={loginHandler}>
@@ -52,8 +54,9 @@ export const Login = () => {
             </button>
             <span className="loginForgot">Forgot Password?</span>
             <hr className="loginHr" />
+            
             <button className="loginRegisterButton">
-            {isFetching ? (
+              {isFetching ? (
                 <CircularProgress color="#fff" size="20px" />
               ) : (
                 "Create a new Account"

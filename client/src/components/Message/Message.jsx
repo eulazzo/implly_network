@@ -1,6 +1,6 @@
 import "./message.css";
 import {format} from 'timeago.js'
-const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
 export const Message = ({ message,own }) => {
   return (
     <div className={own ? "message own" : "message"}>
