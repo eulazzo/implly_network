@@ -33,7 +33,7 @@
 
 <p>
 Application with the purpose of connecting people who have common interests to
-share suggestions of good contents. Just create your account and choose what your
+share good contents. Just create your account and choose what your
 interests are and start to have access to the best that Implly have to offer. (Not implemented yet)
 </p>
  
