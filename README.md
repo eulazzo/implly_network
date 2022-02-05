@@ -25,12 +25,19 @@
 </p>
 
 
- ![SIGMA CHAT GIF](github/intro_1.gif)
+ ![Implly CHAT GIF](github/intro_1.gif)
 
-# Sigma
+# Implly
 
-<p>Application with the purpose of connecting people all over the world <br>
-inspired by Facebook App<br>
+#### Everybody has something GOOD to SHARE!
+
+<p>
+Application with the purpose of connecting people who have common interests to
+share suggestions of good contents. Just create your account and choose what your
+interests are and start to have access to the best that Implly have to offer. (Not implemented yet)
+Developed with Node.js & ReactJS 
+</p>
+ 
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
 # About the project
@@ -56,7 +63,7 @@ Functionalities:
  Let's say the user 4, `on the image below`, wants to send an event to user 3, so user 4 is going to send the sendMmessage event to the server, he takes it(server) this event and say: “ok..this is a sendMessage event” and it came from socketID4, for example, and the receiver is 3. That way, instantly the message will be set on socket 3. So sender will be 4 and text will have the message sent.
 </p>
 
-![SIGMA CHAT GIF](github/socket.png)
+![Implly CHAT GIF](github/socket.png)
 
 
 </br>
@@ -84,7 +91,7 @@ Functionalities:
 
 <h2>Post </h2>
 
-![SIGMA CHAT GIF](github/post_3.gif)
+![Implly CHAT GIF](github/post_3.gif)
 
 
 ## Getting started
