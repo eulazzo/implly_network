@@ -35,7 +35,6 @@
 Application with the purpose of connecting people who have common interests to
 share suggestions of good contents. Just create your account and choose what your
 interests are and start to have access to the best that Implly have to offer. (Not implemented yet)
-Developed with Node.js & ReactJS 
 </p>
  
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
