@@ -1,10 +1,10 @@
 
 <h1 align="center">
-   <img alt="sigma" src="github/sigmaLogo.svg" width="200px" />
+   <img alt="sigma" src="github/logo_v1.svg" width="200px" />
 </h1>
   
 <div align="center">
-  <h1>Sigma - Is about connection </h1>
+  <h1>Implly - Everybody has something <b>GOOD</b> to <b>SHARE</b> </h1>
 </div>
 
 <p align="center" >
@@ -25,7 +25,7 @@
 </p>
 
 
- ![SIGMA CHAT GIF](github/header.gif)
+ ![SIGMA CHAT GIF](github/intro_1.gif)
 
 # Sigma
 
@@ -80,15 +80,12 @@ Functionalities:
 
 <h2>Realtime Chat With Socket.io </h2>
 
-![SIGMA CHAT GIF](github/chatWith.gif)
+![IMPLLY CHAT GIF](github/chat_2.gif)
 
 <h2>Post </h2>
 
-![SIGMA CHAT GIF](github/Posting.gif)
+![SIGMA CHAT GIF](github/post_3.gif)
 
-<h2>All pages until now</h2>
-
-![SIGMA CHAT GIF](github/showSigma.gif)
 
 ## Getting started
 
