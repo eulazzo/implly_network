@@ -27,9 +27,11 @@
 
  ![Implly CHAT GIF](github/intro_1.gif)
 
-# Implly
+</br>
 
-#### Everybody has something GOOD to SHARE!
+# About the project
+
+### Implly - Everybody has something GOOD to SHARE
 
 <p>
 Application with the purpose of connecting people who have common interests to
@@ -39,9 +41,7 @@ interests are and start to have access to the best that Implly have to offer. (N
  
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
-# About the project
-
-Functionalities:
+#### Functionalities:
 - Register
 - Login
 - Post images
@@ -95,25 +95,25 @@ Functionalities:
 
 ## Getting started
 
-1. Clone this repo using `git@github.com:eulazzo/socialmedia.git`
-2. Move yourself to the appropriate directory: `cd socialmedia`<br />
-3. Run `npm install` to install dependencies<br />
+1. Clone this repo using <code>git@github.com:eulazzo/socialmedia.git</code> 
+2. Move yourself to the appropriate directory: <code>cd socialmedia</code> <br />
+3. Run <code>npm install</code> to install dependencies<br />
 
 ### Getting started with the frontend
 
-1. Move yourself to the frontend folder: `cd client` <br>
-2. Run `npm start` or `yarn start` to start the web application <br>
+1. Move yourself to the frontend folder: <code>cd client</code> <br>
+2. Run <code>npm start</code> or <code>yarn start</code> to start the web application <br>
 a window will open, but for the data show up, we have to start the back-end server
 
 ### Getting started with the backend server
 
-1. Move yourself to the backend folder: `cd api`
-2. Create a `.env` file and add the MongoDB url connection in MONGO_URL field
+1. Move yourself to the backend folder:<code>cd api</code> 
+2. Create a <code>.env</code> file and add the MongoDB url connection in MONGO_URL field
 3. Now type yarn run dev, the server will start with nodemon<br>
 4. if you dont have yarn installed, type <code> npm install --global yarn </code> on terminal to install it or just use npm instead <br>
 
 ### Getting started with Socket.io
-1. Move yourself to the socket io folder: `cd socket`
+1. Move yourself to the socket io folder: <code>cd socket</code> 
 2. Go to socket folder and type again <code>npm start</code> for the chat message works properly <br>
 3. now you are ready to create an account and login
 
