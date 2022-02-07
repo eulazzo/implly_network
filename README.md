@@ -8,7 +8,7 @@
 </div>
 
 <p align="center" >
-  <a href="#-sobre-a-aplica%C3%A7%C3%A3o"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#about-the-project"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-conteúdos-aplicados"> Content</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-suporte"> Suport </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -41,7 +41,7 @@ interests are and start to have access to the best that Implly have to offer. (N
  
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
-#### Functionalities:
+#### Features:
 - Register
 - Login
 - Post images
@@ -50,6 +50,7 @@ interests are and start to have access to the best that Implly have to offer. (N
 - In addition, it is possible to `follow users` and `chat in realtime` through `socket.io` 
 - And finally `users who are online are shown`. 
 
+ 
 
 ## Realtime chat
  
