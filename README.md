@@ -70,16 +70,39 @@ interests are and start to have access to the best that Implly have to offer. (N
  ### First of all, what's Socket.Io ? </br>
  <p>
     Socket.io is a technology that allows you to start bi-directional communication session between the browser and the server. Thanks to this protocol it is possibility to send request to the server and receive an answer as events, what means that you don't have to re-send the request to the server. </br>
-    
+ </p> 
+ 
+ ### Socket.io in this project
    So...For this realtime chat application with socket,basically we have a socket server whenever any user connects to the application  it's gonna connect this socket server and they will have their own socketID, and inside the server there is no DB, it's not writing any data, not reading from any db it's just connecting to your computer and using only events. By saying connecting your computer,in short way, means that the socket server use TCP/IP connection. </br>  
   
  Let's say the user 4, `on the image below`, wants to send an event to user 3, so user 4 is going to send the sendMessage event to the server, he takes it(server) this event and say: “ok..this is a sendMessage event it came from socketID4 and the receiver is 3",for example. That way, instantly the message will be set on socket 3. So sender will be 4 and text will have the message sent.
 </p>
 
-![Implly CHAT GIF](github/socket.png)
+<!--   ![Implly CHAT GIF](github/socket.png) -->
 
+ <h1 >
+   <img alt="sigma" src="github/socket.png" width="700px" />
+</h1>
 
 </br>
+
+## What's ContextAPIs and why was used in this project?
+<p>
+   Context api is a global state manager that can be used for authentication, form data storage, and provides a way to pass data through the component tree without having to pass props down manually at every level.
+   For this project, there came a time that i have the feed component where i have fetched the user and user posts but with static id. The exemple code below explained better.
+   
+</p>
+
+```js
+      useEffect(()=>{
+        const fetchPosts = async() => {
+          const { data } = await axios.get("posts/timeline/23453453463634"); 
+          setPosts(data);
+         }
+         fetchPosts()
+      },[])
+   ```
+ <p>But instead of static id, in this exemple,<code>23453453463634</code>, the app must be able to get the logged in user ID but at the time i didn't have any login or register system.  </p>
 
 ## Upload image
 <p>
