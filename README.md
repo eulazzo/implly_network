@@ -8,12 +8,14 @@
 </div>
 
 <p align="center" >
-  <a href="#-sobre-a-aplica%C3%A7%C3%A3o"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#about"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-conteúdos-aplicados"> Content</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-suporte"> Suport </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licen%C3%A7a">License</a>
 </p>
+
+ 
 
 <p align="center">
   <a href="https://github.com/eulazzo" target="_blank">
@@ -33,7 +35,7 @@
 inspired by Facebook App<br>
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
-# About the project
+# About
 
 Functionalities:
 - Register
