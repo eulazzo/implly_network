@@ -10,7 +10,7 @@
 <p align="center" >
   <a href="#about-the-project"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
   <a href="#realtime-chat">Realtime chat</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#application-features">Gifs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#see-the-application-features">Gifs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#getting-started">Getting started </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#techs">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
@@ -84,13 +84,13 @@ interests are and start to have access to the best that Implly have to offer. (N
  <li>Use S3 Storage or Firebase for Upload of images instead of Multer</li>
 </ol>
 
-## Application features:
+## See the application features:
 
-<h2>Realtime Chat With Socket.io </h2>
+### Realtime Chat With Socket.io
 
 ![IMPLLY CHAT GIF](github/chat_2.gif)
 
-<h2>Post </h2>
+### Post
 
 ![Implly CHAT GIF](github/post_3.gif)
 
@@ -119,7 +119,7 @@ a window will open, but for the data show up, we have to start the back-end serv
 2. Go to socket folder and type again <code>npm start</code> for the chat message works properly <br>
 3. now you are ready to create an account and login
 
-## :rocket: Techs
+## Techs
 
 <table>
    
