@@ -1,18 +1,27 @@
 
 <h1 align="center">
-   <img alt="sigma" src="github/sigmaLogo.svg" width="200px" />
+   <img alt="sigma" src="github/logo_v1.svg" width="200px" />
 </h1>
   
 <div align="center">
-  <h1>Sigma - Is about connection </h1>
+  <h1>Implly - Everybody has something <b>GOOD</b> to <b>SHARE</b> </h1>
 </div>
 
 <p align="center" >
+<<<<<<< HEAD
   <a href="#about"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-conteúdos-aplicados"> Content</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-suporte"> Suport </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licen%C3%A7a">License</a>
+=======
+  <a href="#about-the-project"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#realtime-chat">Realtime chat</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#see-the-application-features">Gifs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#getting-started">Getting started </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#techs">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#license">License</a>
+>>>>>>> c61854dc010970b688f731467ba0e59e84497c03
 </p>
 
  
@@ -27,26 +36,35 @@
 </p>
 
 
- ![SIGMA CHAT GIF](github/header.gif)
+ ![Implly CHAT GIF](github/intro_1.gif)
 
-# Sigma
-
-<p>Application with the purpose of connecting people all over the world <br>
-inspired by Facebook App<br>
-<p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
+</br>
 
 # About
 
-Functionalities:
-- Register
-- Login
-- Post images
-- Like a post
-- On the home page, `the posts of the logged in user and the people he follows are fetched`
-- In addition, it is possible to `follow users` and `chat in realtime` through `socket.io` 
-- And finally `users who are online are shown`. 
+### Implly - Everybody has something GOOD to SHARE
 
+<p>
+Application with the purpose of connecting people who have common interests to
+share good contents. Just create your account and choose what your
+interests are and start to have access to the best that Implly have to offer. (Not implemented yet)
+</p>
+ 
+<p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
+#### Features:
+- [X] Register
+- [X] Login
+- [X] Post images
+- [X] Like a post
+- [X] On the home page, `the posts of the logged in user and the people he follows are fetched`
+- [X] In addition, it is possible to `follow users` and `chat in realtime` through `socket.io` 
+- [X] And finally `users who are online are shown`. 
+- [ ] Make the SM Responsive 
+- [ ] Add comment functionality
+- [ ] Delete and edit posts functionality
+- [ ] Use S3 Storage or Firebase for Upload of images instead of Multer
+ 
 ## Realtime chat
  
  ### First of all, what's Socket.Io ? </br>
@@ -55,10 +73,10 @@ Functionalities:
     
    So...For this realtime chat application with socket,basically we have a socket server whenever any user connects to the application  it's gonna connect this socket server and they will have their own socketID, and inside the server there is no DB, it's not writing any data, not reading from any db it's just connecting to your computer and using only events. By saying connecting your computer,in short way, means that the socket server use TCP/IP connection. </br>  
   
- Let's say the user 4, `on the image below`, wants to send an event to user 3, so user 4 is going to send the sendMmessage event to the server, he takes it(server) this event and say: “ok..this is a sendMessage event” and it came from socketID4, for example, and the receiver is 3. That way, instantly the message will be set on socket 3. So sender will be 4 and text will have the message sent.
+ Let's say the user 4, `on the image below`, wants to send an event to user 3, so user 4 is going to send the sendMessage event to the server, he takes it(server) this event and say: “ok..this is a sendMessage event it came from socketID4 and the receiver is 3",for example. That way, instantly the message will be set on socket 3. So sender will be 4 and text will have the message sent.
 </p>
 
-![SIGMA CHAT GIF](github/socket.png)
+![Implly CHAT GIF](github/socket.png)
 
 
 </br>
@@ -69,54 +87,42 @@ Functionalities:
 </p>
 
 
-# To-do lists
- 
-<ol>
- <li>Make the SM Responsive </li>
- <li>Add comment functionality </li>
- <li>Delete and edit posts functionality</li>
- <li>Use S3 Storage or Firebase for Upload of images instead of Multer</li>
-</ol>
+## See the application features:
 
-## :camera: See the app's features:
+### Realtime Chat With Socket.io
 
-<h2>Realtime Chat With Socket.io </h2>
+![IMPLLY CHAT GIF](github/chat_2.gif)
 
-![SIGMA CHAT GIF](github/chatWith.gif)
+### Post
 
-<h2>Post </h2>
+![Implly CHAT GIF](github/post_3.gif)
 
-![SIGMA CHAT GIF](github/Posting.gif)
-
-<h2>All pages until now</h2>
-
-![SIGMA CHAT GIF](github/showSigma.gif)
 
 ## Getting started
 
-1. Clone this repo using `git@github.com:eulazzo/socialmedia.git`
-2. Move yourself to the appropriate directory: `cd socialmedia`<br />
-3. Run `npm install` to install dependencies<br />
+1. Clone this repo using <code>git@github.com:eulazzo/socialmedia.git</code> 
+2. Move yourself to the appropriate directory: <code>cd socialmedia</code> <br />
+3. Run <code>npm install</code> to install dependencies<br />
 
 ### Getting started with the frontend
 
-1. Move yourself to the frontend folder: `cd client` <br>
-2. Run `npm start` or `yarn start` to start the web application <br>
+1. Move yourself to the frontend folder: <code>cd client</code> <br>
+2. Run <code>npm start</code> or <code>yarn start</code> to start the web application <br>
 a window will open, but for the data show up, we have to start the back-end server
 
 ### Getting started with the backend server
 
-1. Move yourself to the backend folder: `cd api`
-2. Create a `.env` file and add the MongoDB url connection in MONGO_URL field
+1. Move yourself to the backend folder:<code>cd api</code> 
+2. Create a <code>.env</code> file and add the MongoDB url connection in MONGO_URL field
 3. Now type yarn run dev, the server will start with nodemon<br>
 4. if you dont have yarn installed, type <code> npm install --global yarn </code> on terminal to install it or just use npm instead <br>
 
 ### Getting started with Socket.io
-1. Move yourself to the socket io folder: `cd socket`
+1. Move yourself to the socket io folder: <code>cd socket</code> 
 2. Go to socket folder and type again <code>npm start</code> for the chat message works properly <br>
 3. now you are ready to create an account and login
 
-## :rocket: Technologies
+## Techs
 
 <table>
    
