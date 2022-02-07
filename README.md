@@ -105,10 +105,30 @@ interests are and start to have access to the best that Implly have to offer. (N
 </p>
 
  
- ### Diagram exemple how contextAPI works
- <h1 >
+ ### Diagram exemple how ContextAPI works
+ <h1>
    <img alt="implly" src="github/ContextDiagram.svg" width="700px" />
 </h1>
+
+<p>
+   When a user login in the app, his id,profilePicture,username,email is stored on the ContextAPI(currentUser). So if for exemple, Post component need some data of the user just fecth on Post the data, Or Side bar component needs the profilePicture, not a problem, Maybe Topbar needs userID or username not problem at all. Basically we have a common state that include the currentUser. So whenever the user is necessary, it's not ask the parent anymore, just ask to ContextAPI instead.
+   Because it's not a huge application that the data is changed often, and used not in a lot of places, ContextAPI is enough. Returning to the dynamic ID necessary to fetch the posts instead of static one. So login with ContextAPi was used. This way, currentUser has the data of the user, and is more easy to in any component.
+   So...Now we have the currentUser on the contextAPI, the we should able to change from the previous code for this:
+    
+
+   ```js
+      const { user } = useContext(AuthContext);
+   
+      useEffect(()=>{
+        const fetchPosts = async () => {
+          const { data } = await axios.get(`/posts/timeline/${user._id}`);
+           setPosts(data);
+        };
+         fetchPosts()
+      },[user._id])
+   ```
+  
+</p>
 
 ## Upload image
 <p>
