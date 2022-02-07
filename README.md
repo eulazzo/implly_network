@@ -10,7 +10,7 @@
 <p align="center" >
   <a href="#about"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
   <a href="#realtime-chat">Realtime chat</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#see-the-application-features">Gifs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#application-features">Gifs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#getting-started">Getting started </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#techs">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
@@ -31,6 +31,21 @@
  ![Implly CHAT GIF](github/intro_1.gif)
 
 </br>
+
+### Topics
+* [About the project](#about)
+   * [Features](#features)
+   * [Realtime chat](#realtime-chat)
+   * [First of all whats socket.io?](#first-of-all-whats-socketio)
+   * [Socket.io in this project](#socketio-in-this-project)
+* [What's ContextAPIs and why was used in this project](#whats-contextapis-and-why-was-used-in-this-project)
+   * [Diagram application structure](#diagram-application-structure)
+   * [Diagram exemple how ContextAPI works](#diagram-exemple-how-contextapi-works) 
+   * [Upload image](#upload-image) 
+   * [GIFS - Application features](#application-features) 
+* [getting started](#getting-started)
+* [Techs](#techs)
+* [License](#license) 
 
 # About
 
@@ -78,7 +93,7 @@ interests are and start to have access to the best that Implly have to offer. (N
 
 </br>
 
-## What's ContextAPIs and why was used in this project?
+# What's ContextAPIs and why was used in this project?
 <p>
    Context api provides a way to pass data through the component tree without having to pass props down manually at every level, and can be used for authentication, form data storage.
    For this project, there came a time that i have the feed component where i have fetched the user posts but with <code> static ID</code>. The exemple code below explained better.
@@ -135,7 +150,7 @@ interests are and start to have access to the best that Implly have to offer. (N
 </p>
 
 
-## See the application features:
+## Application features:
 
 ### Realtime Chat With Socket.io
 
@@ -146,7 +161,7 @@ interests are and start to have access to the best that Implly have to offer. (N
 ![Implly CHAT GIF](github/post_3.gif)
 
 
-## Getting started
+# Getting started
 
 1. Clone this repo using <code>git@github.com:eulazzo/socialmedia.git</code> 
 2. Move yourself to the appropriate directory: <code>cd socialmedia</code> <br />
