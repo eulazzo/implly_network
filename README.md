@@ -54,8 +54,6 @@ interests are and start to have access to the best that Implly have to offer. (N
 - [ ] Add comment functionality
 - [ ] Delete and edit posts functionality
 - [ ] Use S3 Storage or Firebase for Upload of images instead of Multer
-
-   `
  
 ## Realtime chat
  
