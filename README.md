@@ -16,7 +16,6 @@
   <a href="#license">License</a>
 </p>
 
- 
 
 <p align="center">
   <a href="https://github.com/eulazzo" target="_blank">
@@ -36,7 +35,7 @@
 * [About the project](#about)
    * [Features](#features)
    * [Realtime chat](#realtime-chat)
-   * [First of all whats socket.io?](#first-of-all-whats-socketio)
+   * [what's Socket.Io?](#whats-socketio)
    * [Socket.io in this project](#socketio-in-this-project)
 * [What's ContextAPIs and why was used in this project](#whats-contextapis-and-why-was-used-in-this-project)
    * [Diagram application structure](#diagram-application-structure)
@@ -74,7 +73,7 @@ interests are and start to have access to the best that Implly have to offer. (N
  
 ## Realtime chat
  
- ### First of all, what's Socket.Io ? </br>
+ ### What's Socket.Io ? </br>
  <p>
     Socket.io is a technology that allows you to start bi-directional communication session between the browser and the server. Thanks to this protocol it is possibility to send request to the server and receive an answer as events, what means that you don't have to re-send the request to the server. </br>
  </p> 
