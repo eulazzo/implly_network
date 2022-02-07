@@ -43,16 +43,20 @@ interests are and start to have access to the best that Implly have to offer. (N
 <p>Developed with <code>ReactJS</code>, <code>NodeJs</code>,<code>Axios</code>,</br><code>Express</code>, <code>Bcrypt</code>,<code>Mongoose</code>  <code>Socket.io</code> and <code>Context Api</code>  </p> 
 
 #### Features:
-- Register
-- Login
-- Post images
-- Like a post
-- On the home page, `the posts of the logged in user and the people he follows are fetched`
-- In addition, it is possible to `follow users` and `chat in realtime` through `socket.io` 
-- And finally `users who are online are shown`. 
+- [X] Register
+- [X] Login
+- [X] Post images
+- [X] Like a post
+- [X] On the home page, `the posts of the logged in user and the people he follows are fetched`
+- [X] In addition, it is possible to `follow users` and `chat in realtime` through `socket.io` 
+- [X] And finally `users who are online are shown`. 
+- [ ] Make the SM Responsive 
+- [ ] Add comment functionality
+- [ ] Delete and edit posts functionality
+- [ ] Use S3 Storage or Firebase for Upload of images instead of Multer
 
+   `
  
-
 ## Realtime chat
  
  ### First of all, what's Socket.Io ? </br>
@@ -74,15 +78,6 @@ interests are and start to have access to the best that Implly have to offer. (N
   I used multer for this purpose, that's not a good idea, I know. I plan to later switch to Firebase or Amazon Services
 </p>
 
-
-# To-do lists
- 
-<ol>
- <li>Make the SM Responsive </li>
- <li>Add comment functionality </li>
- <li>Delete and edit posts functionality</li>
- <li>Use S3 Storage or Firebase for Upload of images instead of Multer</li>
-</ol>
 
 ## See the application features:
 
