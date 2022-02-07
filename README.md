@@ -111,7 +111,7 @@ interests are and start to have access to the best that Implly have to offer. (N
 </h1>
 
 <p>
-   When a user login in the app, his id,profilePicture,username,email is stored on the ContextAPI(currentUser). So if for exemple, Post component need some data of the user just fecth on Post the data, Or Side bar component needs the profilePicture, not a problem, Maybe Topbar needs userID or username not problem at all. Basically we have a common state that include the currentUser. So whenever the user is necessary, we are not gonna ask the parent anymore, just ask to ContextAPI instead.
+   When a user login in the app, his id, profilePicture, username, email is stored on the ContextAPI(currentUser). So if for exemple, Post component need some data of the user just fecth on Post the data, Or Side bar component needs the profilePicture, not a problem, Maybe Topbar needs userID or username not problem at all. Basically we have a common state that include the currentUser. So whenever the user is necessary, we are not gonna ask the parent anymore, just ask to ContextAPI instead.
    Because it's not a huge application that the data is changed often, and not used in a lot of places, ContextAPI is enough. Returning to the dynamic ID necessary to fetch the posts instead of static one. So login with ContextAPi was used. This way, currentUser has the data of the user, and is more easy to do in any component.
    So...Now that we have the currentUser on the contextAPI, then we should able to change from the previous code to this:
     
