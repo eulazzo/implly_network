@@ -8,20 +8,12 @@
 </div>
 
 <p align="center" >
-<<<<<<< HEAD
   <a href="#about"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-conteúdos-aplicados"> Content</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-suporte"> Suport </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licen%C3%A7a">License</a>
-=======
-  <a href="#about-the-project"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
   <a href="#realtime-chat">Realtime chat</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#see-the-application-features">Gifs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#getting-started">Getting started </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#techs">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
->>>>>>> c61854dc010970b688f731467ba0e59e84497c03
 </p>
 
  
@@ -102,7 +94,21 @@ interests are and start to have access to the best that Implly have to offer. (N
          fetchPosts()
       },[])
    ```
- <p>But instead of static id, in this exemple,<code>23453453463634</code>, the app must be able to get the logged in user ID but at the time i didn't have any login or register system.  </p>
+ <p>But instead of static id, in this exemple,<code>23453453463634</code>, the app must be able to get the logged in user ID but at the time i didn't have any login or register system. With Context api was use for it </p>
+ 
+ ### Diagram application structure
+ <h1 >
+   <img alt="implly" src="github/ComponentDiagram.svg" width="700px" />
+</h1>
+
+<p>Until that moment  my application had this structure. I could easily pass data in Home to Topbar component but i can't pass to App.js not even to Post directly. First i should pass to Feed after that to Post. If I created, say, a post in Feed, I can only pass that data to the Share and Post component because it's its children, there are some advantages because we never conflicts any props. However, there are some disadvantages because, for exemple, when we login to this application we gonna use the <code>CurrentUser</code> on the Header component,Share component, sidebar for show friends  and online friends, likes some post. Basically we gonna use everywhere. That's the reason <code>ContextAPI</code> was used 
+</p>
+
+ 
+ ### Diagram exemple how contextAPI works
+ <h1 >
+   <img alt="implly" src="github/ContextDiagram.svg" width="700px" />
+</h1>
 
 ## Upload image
 <p>
