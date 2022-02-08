@@ -41,7 +41,7 @@
    * [Diagram exemple how ContextAPI works](#diagram-exemple-how-contextapi-works) 
    * [Upload image](#upload-image) 
    * [GIFS - Application features](#application-features) 
-* [getting started](#getting-started)
+* [Getting started](#getting-started)
 * [Techs](#techs)
 * [License](#license) 
 
