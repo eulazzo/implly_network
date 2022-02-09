@@ -89,8 +89,6 @@ interests are and start to have access to the best that Implly have to offer. (N
    <img alt="sigma" src="github/socket.png" width="700px" />
 </h1>
 
-</br>
-
 # What's ContextAPIs and why was used in this project?
 <p>
    Context api provides a way to pass data through the component tree without having to pass props down manually at every level, and can be used for authentication, form data storage.
