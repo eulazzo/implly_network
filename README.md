@@ -105,7 +105,7 @@ interests are and start to have access to the best that Implly have to offer. (N
          fetchPosts()
       },[])
    ```
- <p>But instead of <code> static ID</code>, in this exemple,<code>23453453463634</code>, the app must be able to get the logged in user ID but at the time i didn't have any login or register system, with Context api was used for it </p>
+ <p>But instead of <code> static ID</code>, in this exemple,<code>23453453463634</code>, the app must be able to get the logged in user ID but at the time i didn't have any login or register system. Which Context api was used for it </p>
  
  ### Diagram application structure
  <h1 >
