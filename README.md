@@ -74,7 +74,7 @@ interests are and start to have access to the best that Implly have to offer. (N
  
  ### What's Socket.Io ?
  <p>
-    Socket.io is a technology that allows you to start bi-directional communication session between the browser and the server. Thanks to this protocol it is possibility to send request to the server and receive an answer as events, what means that you don't have to re-send the request to the server. </br>
+    Socket.io is a technology that allows you to start bi-directional communication session between the browser and the server. Thanks to this protocol it is possible to send request to the server and receive an answer as events, what means that you don't have to re-send the request to the server. </br>
  </p> 
  
  ### Socket.io in this project
