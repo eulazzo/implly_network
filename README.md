@@ -173,11 +173,11 @@ interests are and start to have access to the best that Implly have to offer. (N
      }
     ```
  
- * ### deleteUser
-   * Método: DELETE
-   * Path: `/user/:id`
-   * Input:
-     ```
+* ### deleteUser
+  * Método: DELETE
+  * Path: `/user/:id`
+  * Input:
+    ```
      {
         "userId": "612d7ead84896c060dcf5242"
      }
@@ -189,15 +189,15 @@ interests are and start to have access to the best that Implly have to offer. (N
      }
     ```
   
- * ### getaUser
-   * Método: GET
-   * Path: `/user/`
-   * Input:
-     ```
+* ### getUser
+  * Método: GET
+  * Path: `/user/`
+  * Input:
+    ```
       {
 	  "userId": "612d7ead84896c060dcf5242"
       }
-     ```
+    ```
   * Output:
     ```
      {
@@ -214,16 +214,16 @@ interests are and start to have access to the best that Implly have to offer. (N
      }
     ```
  
- * ### createPost
-   * Método: POST
-   * Path: `/posts`
-   * Input:
-     ```
+* ### createPost
+  * Método: POST
+  * Path: `/posts`
+  * Input:
+    ```
      {
        "userId":"618d504752e208102adc9242",
        "desc":"Não há complexidade que resista ao tempo!"
       }  
-   ```
+    ```
   * Ouput
     ```
       {
@@ -235,13 +235,11 @@ interests are and start to have access to the best that Implly have to offer. (N
          "updatedAt": "2021-11-11T17:18:33.444Z",
          "__v": 0
       }
-   ```
-  
-
+     ```
  
-  * ### getPost
-    * Método: GET
-    * Path: `/posts/:id`
+* ### getPost
+  * Método: GET
+  * Path: `/posts/:id`
   * Ouput
     ```
      {
@@ -252,19 +250,19 @@ interests are and start to have access to the best that Implly have to offer. (N
        "createdAt": "2021-09-07T14:35:34.863Z",
        "updatedAt": "2021-09-07T14:35:34.863Z",
        "__v": 0
-     }
-   ```
+      }
+    ```
   
-  * ### updatePost
-    * Método: PUT
-    * Path: `/posts/:id`
-    * Input:  
-      ```
+* ### updatePost
+  * Método: PUT
+  * Path: `/posts/:id`
+  * Input:  
+    ```
       {
         "userId":"618aa1e62e8d0c99abc5ea25",
         "desc":"My first post was updated"
       }
-     ```
+    ```
   * Ouput
     ```
       {
@@ -272,15 +270,15 @@ interests are and start to have access to the best that Implly have to offer. (N
       }
     ```
   
-  * ### timelinePosts
-    * Método: PUT
-    * Path: `/posts/:id`
-    * Input:  
-      ```
-       {
+* ### timelinePosts
+  * Método: PUT
+  * Path: `/posts/:id`
+  * Input:  
+    ```
+     {
          "userId":"612d7ead84896c060dcf5242"
-       }
-      ```
+      }
+    ```
   * Ouput
     ```
      [
@@ -327,12 +325,12 @@ interests are and start to have access to the best that Implly have to offer. (N
 		"updatedAt": "2021-09-07T14:35:16.777Z",
 		"__v": 0
 	}, 
-     ]
+      ]
     ```
  
- * ### getAllFriends
-    * Método: GET
-    * Path: `/friends/:id`
+* ### getAllFriends
+  * Método: GET
+  * Path: `/friends/:id`
 
   * Ouput
     ```
@@ -350,17 +348,17 @@ interests are and start to have access to the best that Implly have to offer. (N
       ]
     ```
  
- * ### addMessage
-    * Método: POST
-    * Path: `/messages`
-    * Input:
-      ```
-       {
+* ### addMessage
+  * Método: POST
+  * Path: `/messages`
+  * Input:
+    ```
+      {
 	  "conversationId":"618fe4d221c7097aabb36460",
           "senderId":"618d4fe252e208102adc923c",
 	  "text":"Hi there! What's up? "
-       } 
-      ```
+      } 
+    ```
 
   * Ouput
     ```
@@ -375,10 +373,10 @@ interests are and start to have access to the best that Implly have to offer. (N
       }
     ```
 * ### createConversation
-   * Método: POST
-   * Path: `/conversations`
-   * Input:
-     ```
+  * Método: POST
+  * Path: `/conversations`
+  * Input:
+    ```
        {
 	  "senderId":"618d504752e208102adc9242",
 	  "receiverId":"618d4fe252e208102adc923c"
@@ -398,6 +396,7 @@ interests are and start to have access to the best that Implly have to offer. (N
 	"__v": 0
      }
    ```
+   
 * ### getMessages
   * Método: POST
   * Path: `/conversations`
@@ -434,15 +433,15 @@ interests are and start to have access to the best that Implly have to offer. (N
       ]
   ```
   
- * ### followUser
-   * Método: PUT
-   * Path: `/user/:id`
-   * input:
+* ### followUser
+  * Método: PUT
+  * Path: `/user/:id`
+  * Input:
+    ```
+        {
+	   "userId": "618d4fe252e208102adc923c"
+	} 
      ```
-          {
-	     "userId": "618d4fe252e208102adc923c"
-	  } 
-      ```
 
   * Ouput
     ```
