@@ -375,9 +375,9 @@ interests are and start to have access to the best that Implly have to offer. (N
       }
   ```
 * ### createConversation
-    * Método: POST
-    * Path: `/conversations`
-    * Input:
+   * Método: POST
+   * Path: `/conversations`
+   * Input:
       ```
        {
 	  "senderId":"618d504752e208102adc9242",
@@ -399,9 +399,9 @@ interests are and start to have access to the best that Implly have to offer. (N
      }
   ```
 * ### getMessages
-    * Método: POST
-    * Path: `/conversations`
-    * Input:
+  * Método: POST
+  * Path: `/conversations`
+  * Input:
       ```
         {
 	  "conversationId":"618fe4d221c7097aabb36460",
@@ -432,6 +432,36 @@ interests are and start to have access to the best that Implly have to offer. (N
 		"__v": 0
 	}
       ]
+  ```
+  
+ * ### followUser
+   * Método: PUT
+   * Path: `/user/:id`
+   * input:
+      ```
+          {
+	     "userId": "618d4fe252e208102adc923c"
+	  } 
+      ```
+
+  * Ouput
+  ```
+    "user has been followed"
+  ```
+ 
+* ### unfollowUser
+  * Método: PUT
+  * Path: `/user/:id`
+  * input:
+      ```
+         {
+	     "userId": "618d4fe252e208102adc923c"
+	  } 
+      ```
+
+  * Ouput
+  ```
+    "user has been unfollowed"
   ```
  
 ## Realtime chat
