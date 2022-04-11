@@ -69,6 +69,231 @@ interests are and start to have access to the best that Implly have to offer. (N
 - [ ] Add comment functionality
 - [ ] Delete and edit posts functionality
 - [ ] Use S3 Storage or Firebase for Upload of images instead of Multer
+
+
+
+
+
+
+
+## Endpoints
+
+* ### signUp
+  * Método: POST
+  * Path: `/auth/register`
+  * input: 
+  ```
+    {
+       "username":"eulazzo",
+       "email":"lazaro@gmail.com",
+       "password":"LFx23lY9099@0dlsxJAVAscript"
+    }
+    
+  ```
+  * Output: (email,password and username is mandatory, will return a error in case one of them is missing)
+```
+  {
+	"username": "eulazzo",
+	"email": "lazaro@gmail.com",
+	"password": "$2b$10$g/0BZi.hLBvtfCOYbUgk/eb/NMxiafXvtzQN6DAaUG3tn3JD6Wm32",
+	"profilePicture": "",
+	"coverPicture": "",
+	"followers": [],
+	"followings": [],
+	"isAdmin": false,
+	"_id": "61901ddb74b46716ce7d4e78",
+	"createdAt": "2021-11-13T20:19:39.788Z",
+	"updatedAt": "2021-11-13T20:19:39.788Z",
+	"__v": 0
+}
+ ```
+
+* ### signIn
+  * Método: POST
+  * Path: `/auth/login`
+  * Input
+   ```
+     {
+       "email":"lazaro@gmail.com",
+       "password":"LFx23lY9099@0dlsxJAVAscript"
+     }
+   ```
+  * Output: 
+   ```
+    {
+      "_id": "618d4fe252e208102adc923c",
+      "username": "eulazzo",
+      "email": "lazaro@gmail.com",
+      "password": "$2b$10$mlGb3vEcR8e2NMnmh0l1X.rKu9zVSlhLbgV9H22bYlxtkpWtcIHKK",
+      "profilePicture": "",
+      "coverPicture": "",
+      "followers": [
+         "618d504752e208102adc9242"
+      ],
+      "followings": [
+         "618d504752e208102adc9242"
+      ],
+      "isAdmin": false,
+      "createdAt": "2021-11-11T17:16:18.074Z",
+      "updatedAt": "2021-11-12T20:32:00.237Z",
+      "__v": 0,
+      "city": "bocaiuva",
+      "from": "Brasil",
+      "relationship": 1
+     }  
+   ```
+
+
+* ### updateUser
+  * Método: PUT
+  * Path: `/user/:id`
+  * Input:
+    ```
+    {
+       "userId": "618a88f06896335dc7de9935",
+       "bio":"Nenhuma complexidade resiste ao tempo!"
+     } 
+    ```
+  * Output:
+```
+  {
+	"_id": "618a88f06896335dc7de9935",
+	"username": "eulazzo5",
+   "bio":"Nenhuma complexidade resiste ao tempo!"
+	"email": "lazaro@ctemplar.com",
+	"password": "$2b$10$rxBjuqVNnZSx89.E8lo9W.d2/zgKCX1zqDKAu/9TRtNMAkb/koIO6",
+	"profilePicture": "",
+	"coverPicture": "",
+	"followers": [],
+	"followings": [],
+	"isAdmin": false,
+	"createdAt": "2021-11-09T14:42:56.029Z",
+	"updatedAt": "2021-11-09T14:42:56.029Z",
+	"__v": 0
+}
+ ```
+ 
+ * ### deleteUser
+   * Método: DELETE
+   * Path: `/user/:id`
+   * Input:
+  ```
+   {
+	 "userId": "612d7ead84896c060dcf5242"
+    }
+  ```
+  * Output:
+```
+   {
+      "Account has been deleted"
+   }
+ ```
+  
+ * ### getaUser
+   * Método: GET
+   * Path: `/user/`
+   * Input:
+  ```
+    {
+	    "userId": "612d7ead84896c060dcf5242"
+    }
+  ```
+  * Output:
+  ```
+    {
+      "_id": "618aa1e62e8d0c99abc5ea25",
+      "username": "eulazzo",
+      "email": "lazaro@ctemplar.com",
+      "profilePicture": "",
+      "coverPicture": "",
+      "followers": [],
+      "followings": [],
+      "isAdmin": false,
+      "createdAt": "2021-11-09T16:29:26.482Z",
+      "__v": 0
+    }
+  ```
+ 
+ * ### createPost
+   * Método: POST
+   * Path: `/posts`
+   * Input:
+   ```
+   {
+      "userId":"618d504752e208102adc9242",
+      "desc":"Não há complexidade que resista ao tempo!"
+    }  
+   ```
+  * 
+   ```
+     {
+         "userId": "618d504752e208102adc9242",
+         "desc": "Friendship is all",
+         "likes": [],
+         "_id": "618d506952e208102adc9246",
+         "createdAt": "2021-11-11T17:18:33.444Z",
+         "updatedAt": "2021-11-11T17:18:33.444Z",
+         "__v": 0
+     }
+  ```
+  
+
+ 
+  * ### getPost
+    * Método: GET
+    * Path: `/posts/:id`
+  * Ouput
+  ```
+     {
+      "_id": "613778b6bd13ec3ecbbd4d34",
+      "likes": [],
+      "userId": "612d7daf84896c060dcf523a",
+      "desc": "Guys, I have learn a lot from. I really recommend you to check it out.",
+      "createdAt": "2021-09-07T14:35:34.863Z",
+      "updatedAt": "2021-09-07T14:35:34.863Z",
+      "__v": 0
+    }
+  ```
+  
+  * ### updatePost
+    * Método: PUT
+    * Path: `/posts/:id`
+    * Input:  
+   ```
+    {
+      "userId":"618aa1e62e8d0c99abc5ea25",
+      "desc":"My first post was updated"
+    }
+   ```
+  * Ouput
+  ```
+     {
+        "The post has been updated"
+     }
+  ```
+ 
+ 
+ 
+## Techs used
+
+ <li> Node.Js </li>
+ <li> MongoDB </li>
+ <li> Javascript </li>
+ <li> Express </li>
+ <li> Mongoose </li>
+ <li> Jwt Authentication </li>
+ <li> Bcrypt </li>
+
+
+
+
+
+
+
+
+
+
+
  
 ## Realtime chat
  
