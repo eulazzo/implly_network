@@ -409,29 +409,31 @@ interests are and start to have access to the best that Implly have to offer. (N
         }
      ```
 
-  * Ouput
-    ```
-      [
-	{
-		"_id": "618fe54221c7097aabb36462",
-		"conversationId": "618fe4d221c7097aabb36460",
-		"senderId": "618d504752e208102adc9242",
-		"text": "Hi, I am lazzaro ",
-		"createdAt": "2021-11-13T16:18:10.888Z",
-		"updatedAt": "2021-11-13T16:18:10.888Z",
-		"__v": 0
-	},
-	{
-		"_id": "618fe58221c7097aabb36464",
-		"conversationId": "618fe4d221c7097aabb36460",
-		"senderId": "618d4fe252e208102adc923c",
-		"text": "Hi, i'm Lorena",
-		"createdAt": "2021-11-13T16:19:14.682Z",
-		"updatedAt": "2021-11-13T16:19:14.682Z",
-		"__v": 0
-	}
-      ]
-  ```
+   * Ouput
+     ```
+     
+        [
+	      {
+		   "_id": "618fe54221c7097aabb36462",
+		    "conversationId": "618fe4d221c7097aabb36460",
+		    "senderId": "618d504752e208102adc9242",
+		    "text": "Hi, I am lazzaro ",
+		    "createdAt": "2021-11-13T16:18:10.888Z",
+		    "updatedAt": "2021-11-13T16:18:10.888Z",
+	            "__v": 0
+		},
+		{
+		    "_id": "618fe58221c7097aabb36464",
+		    "conversationId": "618fe4d221c7097aabb36460",
+	 	    "senderId": "618d4fe252e208102adc923c",
+		    "text": "Hi, i'm Lorena",
+		    "createdAt": "2021-11-13T16:19:14.682Z",
+		    "updatedAt": "2021-11-13T16:19:14.682Z",
+		    "__v": 0
+		}
+       ]
+     
+     ```
   
 * ### followUser
   * Método: PUT
