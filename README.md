@@ -34,6 +34,7 @@
 ### Topics
 * [About the project](#about)
    * [Features](#features)
+   * [Endpoints]("#endpoints")
    * [Realtime chat](#realtime-chat)
    * [Socket.io in this project](#socketio-in-this-project)
 * [What's ContextAPIs and why was used in this project](#whats-contextapis-and-why-was-used-in-this-project)
