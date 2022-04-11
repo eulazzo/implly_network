@@ -82,17 +82,17 @@ interests are and start to have access to the best that Implly have to offer. (N
   * Método: POST
   * Path: `/auth/register`
   * input: 
-  ```
-    {
-       "username":"eulazzo",
-       "email":"lazaro@gmail.com",
-       "password":"LFx23lY9099@0dlsxJAVAscript"
-    }
-    
-  ```
+    ```
+     {
+        "username":"eulazzo",
+        "email":"lazaro@gmail.com",
+        "password":"LFx23lY9099@0dlsxJAVAscript"
+      }
+     
+    ```
   * Output: (email,password and username is mandatory, will return a error in case one of them is missing)
-```
-  {
+    ```
+     {
 	"username": "eulazzo",
 	"email": "lazaro@gmail.com",
 	"password": "$2b$10$g/0BZi.hLBvtfCOYbUgk/eb/NMxiafXvtzQN6DAaUG3tn3JD6Wm32",
@@ -105,21 +105,21 @@ interests are and start to have access to the best that Implly have to offer. (N
 	"createdAt": "2021-11-13T20:19:39.788Z",
 	"updatedAt": "2021-11-13T20:19:39.788Z",
 	"__v": 0
-}
- ```
+      }
+    ```
 
 * ### signIn
   * Método: POST
   * Path: `/auth/login`
   * Input
-   ```
-     {
-       "email":"lazaro@gmail.com",
-       "password":"LFx23lY9099@0dlsxJAVAscript"
-     }
-   ```
+    ```
+      {
+        "email":"lazaro@gmail.com",
+        "password":"LFx23lY9099@0dlsxJAVAscript"
+      }
+    ```
   * Output: 
-   ```
+    ```
     {
       "_id": "618d4fe252e208102adc923c",
       "username": "eulazzo",
@@ -141,7 +141,7 @@ interests are and start to have access to the best that Implly have to offer. (N
       "from": "Brasil",
       "relationship": 1
      }  
-   ```
+    ```
 
 
 * ### updateUser
@@ -155,11 +155,11 @@ interests are and start to have access to the best that Implly have to offer. (N
      } 
     ```
   * Output:
-```
-  {
+    ```
+     {
 	"_id": "618a88f06896335dc7de9935",
 	"username": "eulazzo5",
-   "bio":"Nenhuma complexidade resiste ao tempo!"
+        "bio":"Nenhuma complexidade resiste ao tempo!"
 	"email": "lazaro@ctemplar.com",
 	"password": "$2b$10$rxBjuqVNnZSx89.E8lo9W.d2/zgKCX1zqDKAu/9TRtNMAkb/koIO6",
 	"profilePicture": "",
@@ -170,63 +170,63 @@ interests are and start to have access to the best that Implly have to offer. (N
 	"createdAt": "2021-11-09T14:42:56.029Z",
 	"updatedAt": "2021-11-09T14:42:56.029Z",
 	"__v": 0
-}
- ```
+     }
+    ```
  
  * ### deleteUser
    * Método: DELETE
    * Path: `/user/:id`
    * Input:
-  ```
-   {
-	 "userId": "612d7ead84896c060dcf5242"
-    }
-  ```
+     ```
+     {
+        "userId": "612d7ead84896c060dcf5242"
+     }
+    ```
   * Output:
-```
-   {
-      "Account has been deleted"
-   }
- ```
+    ```
+     {
+        "Account has been deleted"
+     }
+     ```
   
  * ### getaUser
    * Método: GET
    * Path: `/user/`
    * Input:
-  ```
-    {
-	    "userId": "612d7ead84896c060dcf5242"
-    }
-  ```
+     ```
+      {
+	  "userId": "612d7ead84896c060dcf5242"
+      }
+     ```
   * Output:
-  ```
-    {
-      "_id": "618aa1e62e8d0c99abc5ea25",
-      "username": "eulazzo",
-      "email": "lazaro@ctemplar.com",
-      "profilePicture": "",
-      "coverPicture": "",
-      "followers": [],
-      "followings": [],
-      "isAdmin": false,
-      "createdAt": "2021-11-09T16:29:26.482Z",
-      "__v": 0
-    }
-  ```
+    ```
+     {
+       "_id": "618aa1e62e8d0c99abc5ea25",
+       "username": "eulazzo",
+       "email": "lazaro@ctemplar.com",
+       "profilePicture": "",
+       "coverPicture": "",
+       "followers": [],
+       "followings": [],
+       "isAdmin": false,
+       "createdAt": "2021-11-09T16:29:26.482Z",
+       "__v": 0
+     }
+    ```
  
  * ### createPost
    * Método: POST
    * Path: `/posts`
    * Input:
-   ```
-   {
-      "userId":"618d504752e208102adc9242",
-      "desc":"Não há complexidade que resista ao tempo!"
-    }  
+     ```
+     {
+       "userId":"618d504752e208102adc9242",
+       "desc":"Não há complexidade que resista ao tempo!"
+      }  
    ```
   * Ouput
-   ```
-     {
+    ```
+      {
          "userId": "618d504752e208102adc9242",
          "desc": "Friendship is all",
          "likes": [],
@@ -234,8 +234,8 @@ interests are and start to have access to the best that Implly have to offer. (N
          "createdAt": "2021-11-11T17:18:33.444Z",
          "updatedAt": "2021-11-11T17:18:33.444Z",
          "__v": 0
-     }
-  ```
+      }
+   ```
   
 
  
@@ -243,46 +243,46 @@ interests are and start to have access to the best that Implly have to offer. (N
     * Método: GET
     * Path: `/posts/:id`
   * Ouput
-  ```
+    ```
      {
-      "_id": "613778b6bd13ec3ecbbd4d34",
-      "likes": [],
-      "userId": "612d7daf84896c060dcf523a",
-      "desc": "Guys, I have learn a lot from. I really recommend you to check it out.",
-      "createdAt": "2021-09-07T14:35:34.863Z",
-      "updatedAt": "2021-09-07T14:35:34.863Z",
-      "__v": 0
-    }
-  ```
+       "_id": "613778b6bd13ec3ecbbd4d34",
+       "likes": [],
+       "userId": "612d7daf84896c060dcf523a",
+       "desc": "Guys, I have learn a lot from. I really recommend you to check it out.",
+       "createdAt": "2021-09-07T14:35:34.863Z",
+       "updatedAt": "2021-09-07T14:35:34.863Z",
+       "__v": 0
+     }
+   ```
   
   * ### updatePost
     * Método: PUT
     * Path: `/posts/:id`
     * Input:  
-   ```
-    {
-      "userId":"618aa1e62e8d0c99abc5ea25",
-      "desc":"My first post was updated"
-    }
-   ```
+      ```
+      {
+        "userId":"618aa1e62e8d0c99abc5ea25",
+        "desc":"My first post was updated"
+      }
+     ```
   * Ouput
-  ```
-     {
+    ```
+      {
         "The post has been updated"
-     }
-  ```
+      }
+    ```
   
   * ### timelinePosts
     * Método: PUT
     * Path: `/posts/:id`
     * Input:  
-   ```
-    {
-       "userId":"612d7ead84896c060dcf5242"
-    }
-   ```
+      ```
+       {
+         "userId":"612d7ead84896c060dcf5242"
+       }
+      ```
   * Ouput
-  ```
+    ```
      [
 	{
 		"_id": "612d7f2484896c060dcf5244",
@@ -328,27 +328,27 @@ interests are and start to have access to the best that Implly have to offer. (N
 		"__v": 0
 	}, 
      ]
-  ```
+    ```
  
  * ### getAllFriends
     * Método: GET
     * Path: `/friends/:id`
 
   * Ouput
-  ```
-    [
-      {
-	"username": "Priscila",
-	"_id": "618d504752e208102adc9242",
-	"profilePicture": ""
-       },
+    ```
+      [
        {
-	"username": "Luana",
-	"_id": "324234234236426348729242",
-	"profilePicture": ""
+	  "username": "Priscila",
+	  "_id": "618d504752e208102adc9242",
+	  "profilePicture": ""
+        },
+       {
+	  "username": "Luana",
+	  "_id": "324234234236426348729242",
+	  "profilePicture": ""
        }
-     ]
-  ```
+      ]
+    ```
  
  * ### addMessage
     * Método: POST
@@ -363,8 +363,8 @@ interests are and start to have access to the best that Implly have to offer. (N
       ```
 
   * Ouput
-  ```
-    {
+    ```
+     {
 	"conversationId": "618fe4d221c7097aabb36460",
 	"senderId": "618d4fe252e208102adc923c",
 	"text": "Hi there! What's up? ",
@@ -373,20 +373,20 @@ interests are and start to have access to the best that Implly have to offer. (N
 	"updatedAt": "2021-11-13T16:19:14.682Z",
 	"__v": 0
       }
-  ```
+    ```
 * ### createConversation
    * Método: POST
    * Path: `/conversations`
    * Input:
-      ```
+     ```
        {
 	  "senderId":"618d504752e208102adc9242",
 	  "receiverId":"618d4fe252e208102adc923c"
-        }
-      ```
+       }
+     ```
 
   * Ouput
-  ```
+    ```
     {
 	"members": [
 		"618d504752e208102adc9242",
@@ -397,22 +397,22 @@ interests are and start to have access to the best that Implly have to offer. (N
 	"updatedAt": "2021-11-13T16:16:18.094Z",
 	"__v": 0
      }
-  ```
+   ```
 * ### getMessages
   * Método: POST
   * Path: `/conversations`
   * Input:
-      ```
+    ```
         {
 	  "conversationId":"618fe4d221c7097aabb36460",
 	  "senderId":"612d7ead84896c060dcf5242",
           "text":"I very good, and about you?"
         }
-      ```
+     ```
 
   * Ouput
-  ```
-    [
+    ```
+      [
 	{
 		"_id": "618fe54221c7097aabb36462",
 		"conversationId": "618fe4d221c7097aabb36460",
@@ -438,31 +438,31 @@ interests are and start to have access to the best that Implly have to offer. (N
    * Método: PUT
    * Path: `/user/:id`
    * input:
-      ```
+     ```
           {
 	     "userId": "618d4fe252e208102adc923c"
 	  } 
       ```
 
   * Ouput
-  ```
-    "user has been followed"
-  ```
+    ```
+      "user has been followed"
+    ```
  
 * ### unfollowUser
   * Método: PUT
   * Path: `/user/:id`
   * input:
-      ```
-         {
-	     "userId": "618d4fe252e208102adc923c"
-	  } 
-      ```
+    ```
+       {
+	  "userId": "618d4fe252e208102adc923c"
+        } 
+    ```
 
   * Ouput
-  ```
-    "user has been unfollowed"
-  ```
+    ```
+      "user has been unfollowed"
+    ```
  
 ## Realtime chat
  
