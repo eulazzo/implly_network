@@ -385,17 +385,18 @@ interests are and start to have access to the best that Implly have to offer. (N
 
   * Ouput
     ```
-    {
-	"members": [
+       {
+	  "members": [
 		"618d504752e208102adc9242",
 		"618d4fe252e208102adc923c"
-	],
-	"_id": "618fe4d221c7097aabb36460",
-	"createdAt": "2021-11-13T16:16:18.094Z",
-	"updatedAt": "2021-11-13T16:16:18.094Z",
-	"__v": 0
-     }
-   ```
+	  ],
+	  "_id": "618fe4d221c7097aabb36460",
+	  "createdAt": "2021-11-13T16:16:18.094Z",
+	  "updatedAt": "2021-11-13T16:16:18.094Z",
+	  "__v": 0
+        }
+     
+    ```
    
 * ### getMessages
   * Método: POST
