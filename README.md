@@ -34,7 +34,6 @@
 ### Topics
 * [About the project](#about)
    * [Features](#features)
-   * [Endpoints]("#endpoints")
    * [Realtime chat](#realtime-chat)
    * [Socket.io in this project](#socketio-in-this-project)
 * [What's ContextAPIs and why was used in this project](#whats-contextapis-and-why-was-used-in-this-project)
@@ -72,12 +71,31 @@ interests are and start to have access to the best that Implly have to offer. (N
 - [ ] Use S3 Storage or Firebase for Upload of images instead of Multer
 
 
+## DOCUMENTATION 
 
+* ##### First Steps:
+  * Clone this repo using <code>git@github.com:eulazzo/socialmedia.git</code> 
+  * Move yourself to the appropriate directory: <code>cd socialmedia</code> <br />
+  * Run <code>npm install</code> to install dependencies<br />
 
+* ##### Getting started with the frontend
+  * Move yourself to the frontend folder: <code>cd client</code> <br>
+  * Run <code>npm start</code> or <code>yarn start</code> to start the web application <br>
+    window will open, but for the data show up, we have to start the back-end server
 
+* ##### Getting started with the backend server
+  * Move yourself to the backend folder:<code>cd api</code> 
+  * Create a <code>.env</code> file inside api folder and add the MongoDB url connection in MONGO_URL field
+  * Now type yarn run dev, the server will start with nodemon<br>
+  * if you dont have yarn installed, type <code> npm install --global yarn </code> on terminal to install it or just    use npm instead <br>
 
+* ##### Getting started with Socket.io
+  * Move yourself to the socket io folder: <code>cd socket</code> 
+  * Go to socket folder and type again <code>npm start</code> for the chat message works properly <br>
+  * now you are ready to create an account and login
+  * run `npm run start` to start the server
 
-#### Endpoints
+* ## Endpoints
 
 * ### signUp
   * Método: POST
@@ -554,7 +572,7 @@ interests are and start to have access to the best that Implly have to offer. (N
 ![Implly CHAT GIF](github/post_3.gif)
 
 
-# Getting started
+<!-- # Getting started
 
 1. Clone this repo using <code>git@github.com:eulazzo/socialmedia.git</code> 
 2. Move yourself to the appropriate directory: <code>cd socialmedia</code> <br />
@@ -576,7 +594,7 @@ a window will open, but for the data show up, we have to start the back-end serv
 ### Getting started with Socket.io
 1. Move yourself to the socket io folder: <code>cd socket</code> 
 2. Go to socket folder and type again <code>npm start</code> for the chat message works properly <br>
-3. now you are ready to create an account and login
+3. now you are ready to create an account and login -->
 
 ## Techs
 
