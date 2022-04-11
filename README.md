@@ -224,7 +224,7 @@ interests are and start to have access to the best that Implly have to offer. (N
       "desc":"Não há complexidade que resista ao tempo!"
     }  
    ```
-  * 
+  * Ouput
    ```
      {
          "userId": "618d504752e208102adc9242",
@@ -271,29 +271,168 @@ interests are and start to have access to the best that Implly have to offer. (N
         "The post has been updated"
      }
   ```
+  
+  * ### timelinePosts
+    * Método: PUT
+    * Path: `/posts/:id`
+    * Input:  
+   ```
+    {
+       "userId":"612d7ead84896c060dcf5242"
+    }
+   ```
+  * Ouput
+  ```
+     [
+	{
+		"_id": "612d7f2484896c060dcf5244",
+		"likes": [],
+		"userId": "612d7ead84896c060dcf5242",
+		"desc": "Description 1",
+		"img": "post/1.jpeg",
+		"createdAt": "2021-08-31T01:00:20.928Z",
+		"updatedAt": "2021-09-06T17:08:51.183Z",
+		"__v": 0
+	},
+	{
+		"_id": "61469618137e41112e11d1ac",
+		"likes": [],
+		"userId": "612d7ead84896c060dcf5242",
+		"desc": "Description 2",
+		"img": "1632015896378Felipe.png",
+		"createdAt": "2021-09-19T01:44:56.418Z",
+		"updatedAt": "2021-09-19T01:44:56.418Z",
+		"__v": 0
+	},
+	{
+		"_id": "61469624137e41112e11d1be",
+		"likes": [
+			"612d7ead84896c060dcf5242",
+			"6138ada9f9e1840fd3ff84f5"
+		],
+		"userId": "612d7ead84896c060dcf5242",
+		"desc": "Description 3",
+		"img": null,
+		"createdAt": "2021-09-19T01:45:08.382Z",
+		"updatedAt": "2021-09-19T02:00:21.324Z",
+		"__v": 0
+	},
+	{
+		"_id": "613778a4bd13ec3ecbbd4d32",
+		"likes": [],
+		"userId": "612d7daf84896c060dcf523a",
+		"desc": "Description 4",
+		"img": "post/1.jpeg",
+		"createdAt": "2021-09-07T14:35:16.777Z",
+		"updatedAt": "2021-09-07T14:35:16.777Z",
+		"__v": 0
+	}, 
+     ]
+  ```
  
+ * ### getAllFriends
+    * Método: GET
+    * Path: `/friends/:id`
+
+  * Ouput
+  ```
+    [
+      {
+	"username": "Priscila",
+	"_id": "618d504752e208102adc9242",
+	"profilePicture": ""
+       },
+       {
+	"username": "Luana",
+	"_id": "324234234236426348729242",
+	"profilePicture": ""
+       }
+     ]
+  ```
  
- 
-## Techs used
+ * ### addMessage
+    * Método: POST
+    * Path: `/messages`
+    * Input:
+      ```
+       {
+	  "conversationId":"618fe4d221c7097aabb36460",
+          "senderId":"618d4fe252e208102adc923c",
+	  "text":"Hi there! What's up? "
+       } 
+      ```
 
- <li> Node.Js </li>
- <li> MongoDB </li>
- <li> Javascript </li>
- <li> Express </li>
- <li> Mongoose </li>
- <li> Jwt Authentication </li>
- <li> Bcrypt </li>
+  * Ouput
+  ```
+    {
+	"conversationId": "618fe4d221c7097aabb36460",
+	"senderId": "618d4fe252e208102adc923c",
+	"text": "Hi there! What's up? ",
+	"_id": "618fe58221c7097aabb36464",
+	"createdAt": "2021-11-13T16:19:14.682Z",
+	"updatedAt": "2021-11-13T16:19:14.682Z",
+	"__v": 0
+      }
+  ```
+* ### createConversation
+    * Método: POST
+    * Path: `/conversations`
+    * Input:
+      ```
+       {
+	  "senderId":"618d504752e208102adc9242",
+	  "receiverId":"618d4fe252e208102adc923c"
+        }
+      ```
 
+  * Ouput
+  ```
+    {
+	"members": [
+		"618d504752e208102adc9242",
+		"618d4fe252e208102adc923c"
+	],
+	"_id": "618fe4d221c7097aabb36460",
+	"createdAt": "2021-11-13T16:16:18.094Z",
+	"updatedAt": "2021-11-13T16:16:18.094Z",
+	"__v": 0
+     }
+  ```
+* ### getMessages
+    * Método: POST
+    * Path: `/conversations`
+    * Input:
+      ```
+        {
+	  "conversationId":"618fe4d221c7097aabb36460",
+	  "senderId":"612d7ead84896c060dcf5242",
+          "text":"I very good, and about you?"
+        }
+      ```
 
-
-
-
-
-
-
-
-
-
+  * Ouput
+  ```
+    [
+	{
+		"_id": "618fe54221c7097aabb36462",
+		"conversationId": "618fe4d221c7097aabb36460",
+		"senderId": "618d504752e208102adc9242",
+		"text": "Hi, I am lazzaro ",
+		"createdAt": "2021-11-13T16:18:10.888Z",
+		"updatedAt": "2021-11-13T16:18:10.888Z",
+		"__v": 0
+	},
+	{
+		"_id": "618fe58221c7097aabb36464",
+		"conversationId": "618fe4d221c7097aabb36460",
+		"senderId": "618d4fe252e208102adc923c",
+		"text": "Hi, i'm Lorena",
+		"createdAt": "2021-11-13T16:19:14.682Z",
+		"updatedAt": "2021-11-13T16:19:14.682Z",
+		"__v": 0
+	}
+      ]
+  ```
  
 ## Realtime chat
  
