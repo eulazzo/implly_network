@@ -187,7 +187,7 @@ interests are and start to have access to the best that Implly have to offer. (N
      {
         "Account has been deleted"
      }
-     ```
+    ```
   
  * ### getaUser
    * Método: GET
