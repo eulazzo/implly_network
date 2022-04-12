@@ -100,7 +100,7 @@ interests are and start to have access to the best that Implly have to offer. (N
 * ## Endpoints
 
 * ### signUp
-  * Método: POST
+  * Method: POST
   * Path: `/auth/register`
   * input: 
     ```
@@ -130,7 +130,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
 
 * ### signIn
-  * Método: POST
+  * Method: POST
   * Path: `/auth/login`
   * Input
     ```
@@ -166,7 +166,7 @@ interests are and start to have access to the best that Implly have to offer. (N
 
 
 * ### updateUser
-  * Método: PUT
+  * Method: PUT
   * Path: `/user/:id`
   * Input:
     ```
@@ -195,7 +195,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
  
 * ### deleteUser
-  * Método: DELETE
+  * Method: DELETE
   * Path: `/user/:id`
   * Input:
     ```
@@ -211,7 +211,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
   
 * ### getUser
-  * Método: GET
+  * Method: GET
   * Path: `/user/`
   * Input:
     ```
@@ -236,7 +236,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
  
 * ### createPost
-  * Método: POST
+  * Method: POST
   * Path: `/posts`
   * Input:
     ```
@@ -259,7 +259,7 @@ interests are and start to have access to the best that Implly have to offer. (N
      ```
  
 * ### getPost
-  * Método: GET
+  * Method: GET
   * Path: `/posts/:id`
   * Ouput
     ```
@@ -275,7 +275,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
   
 * ### updatePost
-  * Método: PUT
+  * Method: PUT
   * Path: `/posts/:id`
   * Input:  
     ```
@@ -292,7 +292,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
   
 * ### timelinePosts
-  * Método: PUT
+  * Method: PUT
   * Path: `/posts/:id`
   * Input:  
     ```
@@ -350,7 +350,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
  
 * ### getAllFriends
-  * Método: GET
+  * Method: GET
   * Path: `/friends/:id`
 
   * Ouput
@@ -370,7 +370,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
  
 * ### addMessage
-  * Método: POST
+  * Method: POST
   * Path: `/messages`
   * Input:
     ```
@@ -394,7 +394,7 @@ interests are and start to have access to the best that Implly have to offer. (N
       }
     ```
 * ### createConversation
-  * Método: POST
+  * Method: POST
   * Path: `/conversations`
   * Input:
     ```
@@ -420,7 +420,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
    
 * ### getMessages
-  * Método: POST
+  * Method: POST
   * Path: `/conversations`
   * Input:
     ```
@@ -458,7 +458,7 @@ interests are and start to have access to the best that Implly have to offer. (N
      ```
   
 * ### followUser
-  * Método: PUT
+  * Method: PUT
   * Path: `/user/:id`
   * Input:
     ```
@@ -473,7 +473,7 @@ interests are and start to have access to the best that Implly have to offer. (N
     ```
  
 * ### unfollowUser
-  * Método: PUT
+  * Method: PUT
   * Path: `/user/:id`
   * input:
     ```
