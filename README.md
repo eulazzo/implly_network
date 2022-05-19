@@ -25,9 +25,10 @@
   <img src="https://img.shields.io/github/last-commit/eulazzo/Sigma?color=1877f2&labelColor=008000" alt="Commits">
   <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=1877f2&labelColor=008000" alt="License">
 </p>
+ 
 
+ ![Implly CHAT GIF](github/intro_1.gif)
 
- ![Amaze Network]( https://res.cloudinary.com/toppo/image/upload/v1652989558/uploads/AmazeNetwork_o8bhdz.png)
 
 </br>
 
