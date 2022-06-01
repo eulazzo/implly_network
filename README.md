@@ -67,12 +67,12 @@ interests are and start to have access to the best that Implly have to offer. (N
 - [X] On the home page, `the posts of the logged in user and the people he follows are fetched`
 - [X] In addition, it is possible to `follow users` and `chat in realtime` through `socket.io` 
 - [X] And finally `users who are online are shown` (On the chat page)
-- [ ] Make the SM Responsive 
+<!-- - [ ] Make the SM Responsive 
 - [ ] Add comment functionality
 - [ ] Delete and edit posts functionality
 - [ ] Use S3 Storage or Firebase for Upload of images instead of Multer
 - [ ] Save posts
-- [ ] Search Posts
+- [ ] Search Posts -->
 
 ## DOCUMENTATION 
 
