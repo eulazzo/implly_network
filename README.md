@@ -26,9 +26,9 @@
   <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=1877f2&labelColor=008000" alt="License">
 </p>
  
+![Implly CHAT GIF](github/intro_1.gif)
 
- ![Implly CHAT GIF](github/intro_1.gif)
-
+### I did a video showing the project, u can check out <a href="https://www.youtube.com/watch?v=sdc_26Fuof0&t=72s">HERE</a>
 
 </br>
 
@@ -49,6 +49,7 @@
 # About
 
 ### Implly - Everybody has something GOOD to SHARE
+ 
 
 <p>
 Application with the purpose of connecting people who have common interests to
